@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpu-engineering-agent-benchmark"
+version = "0.1.0"
+description = "Agent benchmark for CUDA, GPU, PyTorch, distributed, and backend engineering tasks."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "google-genai>=1.30,<2",
+    "langgraph>=0.6,<1",
+    "numpy>=2.0,<3",
+    "pydantic>=2.10,<3",
+    "pyyaml>=6.0,<7",
+    "pytest>=8.3,<10",
+    "pytest-cov>=6,<8",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.12,<1",
+    "mypy>=1.17,<2",
+]
+
+[tool.setuptools]
+packages = [
+    "agents",
+    "agents.analyzer",
+    "agents.optimizer",
+    "agents.reader",
+    "agents.verifier",
+    "agents.orchestrator",
+    "orchestration",
+    "llm",
+    "runtime",
+    "tools",
+    "tools.workspace",
+    "trajectories",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
