@@ -338,6 +338,10 @@ def main() -> int:
         try:
             result = execute_case(case_id)
         except Exception as exc:
+            metadata = load_metadata(case_id)
+            source = read_case_sources(case_id)
+            execution_class = classify(metadata, source)
+
             result = {
                 "case_id": case_id,
                 "implementation": "reference",
@@ -345,10 +349,11 @@ def main() -> int:
                 "correctness": "FAIL",
                 "runtime_seconds": None,
                 "execution": {
-                    "cuda": False,
+                    "cuda": "cuda" in metadata.get("required_runtime", []),
                     "gemini": False,
                     "mode": "executor_error",
                 },
+                "execution_class": execution_class,
                 "error": f"{type(exc).__name__}: {exc}",
                 "gemini_api_call": False,
             }

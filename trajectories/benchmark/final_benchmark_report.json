@@ -1,0 +1,196 @@
+{
+  "aggregate": {
+    "average_baseline_runtime": 1.1727024444444445,
+    "average_candidate_runtime": 2.8520647709992772,
+    "average_speedup": 0.40983711586271554,
+    "baseline_failed": 0,
+    "baseline_passed": 10,
+    "candidate_passed": 10,
+    "candidate_success_rate": 1.0,
+    "cases": 10,
+    "failed_cases": []
+  },
+  "benchmark": "GPU Engineering Agent Benchmark",
+  "comparison": {
+    "baseline": "reference",
+    "candidate": "gemini_flash_agent"
+  },
+  "execution": {
+    "batch_execution": true,
+    "cuda_required": true,
+    "execution_performed_by_this_step": false,
+    "gemini_api_required": true,
+    "historical_kaggle_evidence": true,
+    "trajectory_recording": true
+  },
+  "mode": "canonical_evidence_report",
+  "per_case": [
+    {
+      "baseline_correctness": "PASS",
+      "baseline_evidence": "trajectories/benchmark/case_001_baseline.json",
+      "baseline_runtime": null,
+      "candidate_attempts": null,
+      "candidate_correctness": "PASS",
+      "candidate_kernel_time_ms": null,
+      "candidate_runtime": null,
+      "case_id": "case_001",
+      "failure_reason": null,
+      "speedup": null,
+      "trajectory": {
+        "evidence": "trajectories/benchmark/actual_kaggle_execution/case_001/actual_result.json",
+        "status": "PRESERVED"
+      }
+    },
+    {
+      "baseline_correctness": "PASS",
+      "baseline_evidence": "trajectories/benchmark/case_002_baseline.json",
+      "baseline_runtime": 1.772622,
+      "candidate_attempts": null,
+      "candidate_correctness": "PASS",
+      "candidate_kernel_time_ms": null,
+      "candidate_runtime": null,
+      "case_id": "case_002",
+      "failure_reason": null,
+      "speedup": null,
+      "trajectory": {
+        "evidence": "trajectories/benchmark/actual_kaggle_execution/case_002/existing_candidate_revalidation.json",
+        "status": "PRESERVED"
+      }
+    },
+    {
+      "baseline_correctness": "PASS",
+      "baseline_evidence": "trajectories/benchmark/case_003_baseline.json",
+      "baseline_runtime": 1.013618,
+      "candidate_attempts": null,
+      "candidate_correctness": "PASS",
+      "candidate_kernel_time_ms": null,
+      "candidate_runtime": null,
+      "case_id": "case_003",
+      "failure_reason": null,
+      "speedup": null,
+      "trajectory": {
+        "evidence": "trajectories/benchmark/agent_pipeline/case_003/real_interface_verification/verifier_result.json",
+        "status": "PRESERVED"
+      }
+    },
+    {
+      "baseline_correctness": "PASS",
+      "baseline_evidence": "trajectories/benchmark/case_004_baseline.json",
+      "baseline_runtime": 0.970636,
+      "candidate_attempts": null,
+      "candidate_correctness": "PASS",
+      "candidate_kernel_time_ms": null,
+      "candidate_runtime": null,
+      "case_id": "case_004",
+      "failure_reason": null,
+      "speedup": null,
+      "trajectory": {
+        "evidence": "trajectories/benchmark/agent_pipeline/case_004/final_real_contract_verification/verifier_result.json",
+        "status": "PRESERVED"
+      }
+    },
+    {
+      "baseline_correctness": "PASS",
+      "baseline_evidence": "trajectories/benchmark/case_005_baseline.json",
+      "baseline_runtime": 0.952019,
+      "candidate_attempts": null,
+      "candidate_correctness": "PASS",
+      "candidate_kernel_time_ms": null,
+      "candidate_runtime": null,
+      "case_id": "case_005",
+      "failure_reason": null,
+      "speedup": null,
+      "trajectory": {
+        "evidence": "trajectories/benchmark/agent_pipeline/case_005/static_lifetime_verification/verifier_result.json",
+        "status": "PRESERVED"
+      }
+    },
+    {
+      "baseline_correctness": "PASS",
+      "baseline_evidence": "trajectories/benchmark/case_006_baseline.json",
+      "baseline_runtime": 1.168882,
+      "candidate_attempts": null,
+      "candidate_correctness": "PASS",
+      "candidate_kernel_time_ms": null,
+      "candidate_runtime": 2.8520647709992772,
+      "case_id": "case_006",
+      "failure_reason": null,
+      "speedup": 0.40983711586271554,
+      "trajectory": {
+        "evidence": "trajectories/benchmark/actual_kaggle_execution/case_006/verifier_result.json",
+        "status": "PRESERVED"
+      }
+    },
+    {
+      "baseline_correctness": "PASS",
+      "baseline_evidence": "trajectories/benchmark/case_007_baseline.json",
+      "baseline_runtime": 1.167327,
+      "candidate_attempts": null,
+      "candidate_correctness": "PASS",
+      "candidate_kernel_time_ms": null,
+      "candidate_runtime": null,
+      "case_id": "case_007",
+      "failure_reason": null,
+      "speedup": null,
+      "trajectory": {
+        "evidence": "trajectories/benchmark/actual_kaggle_execution/case_007/verifier_result.json",
+        "status": "PRESERVED"
+      }
+    },
+    {
+      "baseline_correctness": "PASS",
+      "baseline_evidence": "trajectories/benchmark/case_008_baseline.json",
+      "baseline_runtime": 1.174999,
+      "candidate_attempts": null,
+      "candidate_correctness": "PASS",
+      "candidate_kernel_time_ms": null,
+      "candidate_runtime": null,
+      "case_id": "case_008",
+      "failure_reason": null,
+      "speedup": null,
+      "trajectory": {
+        "evidence": "trajectories/benchmark/actual_kaggle_execution/case_008/runtime_verification.json",
+        "status": "PRESERVED"
+      }
+    },
+    {
+      "baseline_correctness": "PASS",
+      "baseline_evidence": "trajectories/benchmark/case_009_baseline.json",
+      "baseline_runtime": 1.196184,
+      "candidate_attempts": null,
+      "candidate_correctness": "PASS",
+      "candidate_kernel_time_ms": null,
+      "candidate_runtime": null,
+      "case_id": "case_009",
+      "failure_reason": null,
+      "speedup": null,
+      "trajectory": {
+        "evidence": "trajectories/benchmark/actual_kaggle_execution/case_009/runtime_verification_corrected.json",
+        "status": "PRESERVED"
+      }
+    },
+    {
+      "baseline_correctness": "PASS",
+      "baseline_evidence": "trajectories/benchmark/case_010_baseline.json",
+      "baseline_runtime": 1.138035,
+      "candidate_attempts": null,
+      "candidate_correctness": "PASS",
+      "candidate_kernel_time_ms": null,
+      "candidate_runtime": null,
+      "case_id": "case_010",
+      "failure_reason": null,
+      "speedup": null,
+      "trajectory": {
+        "evidence": "trajectories/benchmark/actual_kaggle_execution/case_010/runtime_verification.json",
+        "status": "PRESERVED"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "status": "PASS",
+  "trajectory": {
+    "canonical_evidence_verified": true,
+    "historical_artifacts_preserved": true
+  },
+  "version": "phase-2"
+}

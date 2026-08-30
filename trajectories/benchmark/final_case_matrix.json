@@ -1,0 +1,360 @@
+{
+  "benchmark": "GPU Engineering Agent Benchmark",
+  "cases": [
+    {
+      "baseline": {
+        "evidence": "trajectories/benchmark/case_001_baseline.json",
+        "implementation": "reference",
+        "runtime_seconds": null,
+        "status": "PASS"
+      },
+      "bug_class": "indexing / boundary conditions",
+      "candidate": {
+        "evidence": "trajectories/benchmark/actual_kaggle_execution/case_001/actual_result.json",
+        "implementation": "gemini_flash_agent",
+        "kernel_time_ms": null,
+        "runtime_seconds": null,
+        "status": "PASS",
+        "success": true
+      },
+      "case_id": "case_001",
+      "cuda_execution_required": true,
+      "difficulty": "initial",
+      "domain": "CUDA Kernel",
+      "execution_class": "CUDA",
+      "failure_reason": null,
+      "gemini_api_required": true,
+      "name": "CUDA Kernel Indexing Boundary Bug",
+      "required_runtime": [
+        "cuda"
+      ],
+      "trajectory": {
+        "historical_artifacts_preserved": true,
+        "status": "PRESERVED"
+      }
+    },
+    {
+      "baseline": {
+        "evidence": "trajectories/benchmark/case_002_baseline.json",
+        "implementation": "reference",
+        "runtime_seconds": 1.772622,
+        "status": "PASS"
+      },
+      "bug_class": "host/device transfer ordering or pinned/pageable handling",
+      "candidate": {
+        "evidence": "trajectories/benchmark/actual_kaggle_execution/case_002/existing_candidate_revalidation.json",
+        "implementation": "gemini_flash_agent",
+        "kernel_time_ms": null,
+        "runtime_seconds": null,
+        "status": "PASS",
+        "success": true
+      },
+      "case_id": "case_002",
+      "cuda_execution_required": true,
+      "difficulty": "initial",
+      "domain": "CUDA Memory",
+      "execution_class": "CUDA",
+      "failure_reason": null,
+      "gemini_api_required": true,
+      "name": "CUDA Host GPU Transfer Bug",
+      "required_runtime": [
+        "cuda"
+      ],
+      "trajectory": {
+        "historical_artifacts_preserved": true,
+        "status": "PRESERVED"
+      }
+    },
+    {
+      "baseline": {
+        "evidence": "trajectories/benchmark/case_003_baseline.json",
+        "implementation": "reference",
+        "runtime_seconds": 1.013618,
+        "status": "PASS"
+      },
+      "bug_class": "missing inter-stream dependency",
+      "candidate": {
+        "evidence": "trajectories/benchmark/agent_pipeline/case_003/real_interface_verification/verifier_result.json",
+        "implementation": "gemini_flash_agent",
+        "kernel_time_ms": null,
+        "runtime_seconds": null,
+        "status": "PASS",
+        "success": true
+      },
+      "case_id": "case_003",
+      "cuda_execution_required": true,
+      "difficulty": "initial",
+      "domain": "CUDA Streams",
+      "execution_class": "CUDA",
+      "failure_reason": null,
+      "gemini_api_required": true,
+      "name": "CUDA Stream Event Dependency Bug",
+      "required_runtime": [
+        "cuda"
+      ],
+      "trajectory": {
+        "historical_artifacts_preserved": true,
+        "status": "PRESERVED"
+      }
+    },
+    {
+      "baseline": {
+        "evidence": "trajectories/benchmark/case_004_baseline.json",
+        "implementation": "reference",
+        "runtime_seconds": 0.970636,
+        "status": "PASS"
+      },
+      "bug_class": "missing shared-memory synchronization",
+      "candidate": {
+        "evidence": "trajectories/benchmark/agent_pipeline/case_004/final_real_contract_verification/verifier_result.json",
+        "implementation": "gemini_flash_agent",
+        "kernel_time_ms": null,
+        "runtime_seconds": null,
+        "status": "PASS",
+        "success": true
+      },
+      "case_id": "case_004",
+      "cuda_execution_required": true,
+      "difficulty": "initial",
+      "domain": "CUDA Sync",
+      "execution_class": "CUDA",
+      "failure_reason": null,
+      "gemini_api_required": true,
+      "name": "CUDA Synchronization Race Bug",
+      "required_runtime": [
+        "cuda"
+      ],
+      "trajectory": {
+        "historical_artifacts_preserved": true,
+        "status": "PRESERVED"
+      }
+    },
+    {
+      "baseline": {
+        "evidence": "trajectories/benchmark/case_005_baseline.json",
+        "implementation": "reference",
+        "runtime_seconds": 0.952019,
+        "status": "PASS"
+      },
+      "bug_class": "control-flow-dependent resource lifetime leak",
+      "candidate": {
+        "evidence": "trajectories/benchmark/agent_pipeline/case_005/static_lifetime_verification/verifier_result.json",
+        "implementation": "gemini_flash_agent",
+        "kernel_time_ms": null,
+        "runtime_seconds": null,
+        "status": "PASS",
+        "success": true
+      },
+      "case_id": "case_005",
+      "cuda_execution_required": false,
+      "difficulty": "adversarial",
+      "domain": "CUDA Memory Management",
+      "execution_class": "CUDA",
+      "failure_reason": null,
+      "gemini_api_required": false,
+      "name": "Adversarial CUDA Memory Lifetime Vector",
+      "required_runtime": [
+        "python",
+        "cuda"
+      ],
+      "trajectory": {
+        "historical_artifacts_preserved": true,
+        "status": "PRESERVED"
+      }
+    },
+    {
+      "baseline": {
+        "evidence": "trajectories/benchmark/case_006_baseline.json",
+        "implementation": "reference",
+        "runtime_seconds": 1.168882,
+        "status": "PASS"
+      },
+      "bug_class": "CPU/GPU or cross-device tensor mismatch",
+      "candidate": {
+        "evidence": "trajectories/benchmark/actual_kaggle_execution/case_006/verifier_result.json",
+        "implementation": "gemini_flash_agent",
+        "kernel_time_ms": null,
+        "runtime_seconds": 2.8520647709992772,
+        "status": "PASS",
+        "success": true
+      },
+      "case_id": "case_006",
+      "cuda_execution_required": true,
+      "difficulty": "incremental",
+      "domain": "PyTorch GPU",
+      "execution_class": "PYTORCH",
+      "failure_reason": null,
+      "gemini_api_required": null,
+      "name": "PyTorch CUDA Device Mismatch",
+      "required_runtime": [
+        "python",
+        "torch",
+        "cuda"
+      ],
+      "trajectory": {
+        "historical_artifacts_preserved": true,
+        "status": "PRESERVED"
+      }
+    },
+    {
+      "baseline": {
+        "evidence": "trajectories/benchmark/case_007_baseline.json",
+        "implementation": "reference",
+        "runtime_seconds": 1.167327,
+        "status": "PASS"
+      },
+      "bug_class": "incorrect accumulation or communication boundary",
+      "candidate": {
+        "evidence": "trajectories/benchmark/actual_kaggle_execution/case_007/verifier_result.json",
+        "implementation": "gemini_flash_agent",
+        "kernel_time_ms": null,
+        "runtime_seconds": null,
+        "status": "PASS",
+        "success": true
+      },
+      "case_id": "case_007",
+      "cuda_execution_required": false,
+      "difficulty": "incremental",
+      "domain": "Distributed Training",
+      "execution_class": "DISTRIBUTED",
+      "failure_reason": null,
+      "gemini_api_required": false,
+      "name": "PyTorch DDP Synchronization Bug",
+      "required_runtime": [
+        "python",
+        "torch",
+        "distributed"
+      ],
+      "trajectory": {
+        "historical_artifacts_preserved": true,
+        "status": "PRESERVED"
+      }
+    },
+    {
+      "baseline": {
+        "evidence": "trajectories/benchmark/case_008_baseline.json",
+        "implementation": "reference",
+        "runtime_seconds": 1.174999,
+        "status": "PASS"
+      },
+      "bug_class": "incorrect accumulation or communication boundary",
+      "candidate": {
+        "evidence": "trajectories/benchmark/actual_kaggle_execution/case_008/runtime_verification.json",
+        "implementation": "gemini_flash_agent",
+        "kernel_time_ms": null,
+        "runtime_seconds": null,
+        "status": "PASS",
+        "success": true
+      },
+      "case_id": "case_008",
+      "cuda_execution_required": false,
+      "difficulty": "incremental",
+      "domain": "Distributed Training",
+      "execution_class": "DISTRIBUTED",
+      "failure_reason": null,
+      "gemini_api_required": false,
+      "name": "Distributed Gradient Communication Bug",
+      "required_runtime": [
+        "python",
+        "torch",
+        "distributed"
+      ],
+      "trajectory": {
+        "historical_artifacts_preserved": true,
+        "status": "PRESERVED"
+      }
+    },
+    {
+      "baseline": {
+        "evidence": "trajectories/benchmark/case_009_baseline.json",
+        "implementation": "reference",
+        "runtime_seconds": 1.196184,
+        "status": "PASS"
+      },
+      "bug_class": "incorrect asynchronous execution boundary",
+      "candidate": {
+        "evidence": "trajectories/benchmark/actual_kaggle_execution/case_009/runtime_verification_corrected.json",
+        "implementation": "gemini_flash_agent",
+        "kernel_time_ms": null,
+        "runtime_seconds": null,
+        "status": "PASS",
+        "success": true
+      },
+      "case_id": "case_009",
+      "cuda_execution_required": false,
+      "difficulty": "incremental",
+      "domain": "Async Backend GPU Execution",
+      "execution_class": "PYTORCH",
+      "failure_reason": null,
+      "gemini_api_required": false,
+      "name": "Async Backend GPU Worker Bug",
+      "required_runtime": [
+        "python",
+        "torch",
+        "cuda",
+        "async"
+      ],
+      "trajectory": {
+        "historical_artifacts_preserved": true,
+        "status": "PRESERVED"
+      }
+    },
+    {
+      "baseline": {
+        "evidence": "trajectories/benchmark/case_010_baseline.json",
+        "implementation": "reference",
+        "runtime_seconds": 1.138035,
+        "status": "PASS"
+      },
+      "bug_class": "compound configuration/orchestration failure",
+      "candidate": {
+        "evidence": "trajectories/benchmark/actual_kaggle_execution/case_010/runtime_verification.json",
+        "implementation": "gemini_flash_agent",
+        "kernel_time_ms": null,
+        "runtime_seconds": null,
+        "status": "PASS",
+        "success": true
+      },
+      "case_id": "case_010",
+      "cuda_execution_required": false,
+      "difficulty": "highest-initial-set",
+      "domain": "Distributed GPU Infrastructure",
+      "execution_class": "DISTRIBUTED",
+      "failure_reason": null,
+      "gemini_api_required": false,
+      "name": "Full System Distributed GPU Configuration Bug",
+      "required_runtime": [
+        "python",
+        "cuda",
+        "torch",
+        "distributed"
+      ],
+      "trajectory": {
+        "historical_artifacts_preserved": true,
+        "status": "PRESERVED"
+      }
+    }
+  ],
+  "execution": {
+    "cuda_execution": false,
+    "gemini_execution": false,
+    "historical_execution_reused": true,
+    "kaggle_execution": false,
+    "report_generation_execution": false
+  },
+  "schema_version": "1.0",
+  "source": {
+    "canonical_evidence": true,
+    "final_report": "trajectories/benchmark/final_benchmark_report.json",
+    "historical_evidence_modified": false,
+    "registry": "tools/batch/case_registry.json"
+  },
+  "status": "PASS",
+  "summary": {
+    "baseline_passed": 10,
+    "candidate_passed": 10,
+    "candidate_success_rate": 1.0,
+    "cases": 10,
+    "failed_cases": []
+  }
+}

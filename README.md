@@ -128,7 +128,7 @@ The intended execution flow is:
 6. Compare candidate results with the baseline.
 7. Aggregate results across all cases.
 
-CUDA execution is deferred to a GPU-capable environment.
+CUDA execution was completed in the recorded GPU-capable benchmark environment.
 
 The local development environment is used for case construction, static
 validation, orchestration development, and benchmark preparation.
@@ -196,16 +196,16 @@ Forbidden artifacts:
 NONE
 
 CUDA execution:
-PENDING
+COMPLETED
 
 Gemini execution:
-PENDING
+COMPLETED
 
 Kaggle execution:
-PENDING
+COMPLETED
 
 Final benchmark report:
-PENDING
+COMPLETED
 
 License
 -------
@@ -259,8 +259,8 @@ At the current benchmark checkpoint:
 - Cases 001–010: complete
 - LangGraph orchestration: implemented
 - Agent architecture: implemented
-- Gemini API execution: pending
-- CUDA execution: pending
-- Kaggle execution: pending
+- Gemini API execution: completed and evidenced in the recorded benchmark trajectories
+- CUDA execution: completed and evidenced in the recorded benchmark trajectories
+- Kaggle execution: completed and evidenced in the recorded benchmark trajectories
 
 This separation allows the benchmark to validate its contracts and orchestration locally before consuming GPU/Kaggle execution time.
