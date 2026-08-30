@@ -1,52 +1,26 @@
 {
-  "schema_version": "1.0",
-  "case_id": "case_004",
-  "mode": "reference_baseline",
   "baseline": {
-    "status": "PASS",
-    "artifact": "/kaggle/working/gpu_engineering_agent_benchmark/trajectories/benchmark/case_004_baseline.json",
-    "sha256": "0223a0b6cbea200ea4592b0339f83b434bf57b2a1d14043ac39d4593463fee60"
+    "correctness": "PASS",
+    "implementation": "reference",
+    "runtime_seconds": 0.970636,
+    "status": "PASS"
   },
   "candidate": {
-    "status": "NOT_RUN"
+    "implementation": "gemini_flash_agent",
+    "status": "PENDING"
   },
-  "verifier": {
-    "status": "PASS",
-    "type": "reference_interface_harness",
-    "runs": 150,
-    "passed": 150,
-    "failed": 0
-  },
+  "case_id": "case_004",
+  "mode": "reference_baseline",
+  "schema_version": "1.0",
   "secrets": {
-    "gemini_api_called": false,
-    "secret_value_printed": false
+    "api_keys_recorded": false,
+    "credentials_recorded": false
   },
   "trajectory": {
-    "stage": "reference_baseline",
-    "status": "PASS",
-    "events": [
-      {
-        "event": "reference_interface_detected",
-        "function": "run_reduction",
-        "status": "PASS"
-      },
-      {
-        "event": "reference_object_compile",
-        "status": "PASS"
-      },
-      {
-        "event": "verification_harness_compile",
-        "status": "PASS"
-      },
-      {
-        "event": "reference_execution",
-        "status": "PASS",
-        "runs": 150
-      },
-      {
-        "event": "baseline_saved",
-        "status": "PASS"
-      }
-    ]
+    "execution_class": "CUDA",
+    "status": "READY"
+  },
+  "verifier": {
+    "status": "PENDING"
   }
 }

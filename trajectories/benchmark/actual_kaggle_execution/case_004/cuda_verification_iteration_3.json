@@ -1,0 +1,36 @@
+{
+  "case_id": "case_004",
+  "iteration": 3,
+  "candidate_sha256": "676bfa76b913be2f8c8fab81f4edea32154bee4b307ec600860e441389d8269a",
+  "candidate_path": "/kaggle/working/micro1-frontier-engineering/trajectories/benchmark/actual_kaggle_execution/case_004/candidate_iteration_3.cu",
+  "candidate_equals_reference": true,
+  "compile": {
+    "status": "PASS",
+    "return_code": 0
+  },
+  "execution": {
+    "status": "FAIL",
+    "return_code": 10,
+    "stdout": "------------------------------------------------------------\nSIZE=1\nSIZE=1 STATUS=PASS\n------------------------------------------------------------\nSIZE=2\nSIZE=2 STATUS=PASS\n------------------------------------------------------------\nSIZE=31\nSIZE=31 STATUS=PASS\n------------------------------------------------------------\nSIZE=127\nSIZE=127 STATUS=PASS\n------------------------------------------------------------\nSIZE=255\nSIZE=255 STATUS=PASS\n------------------------------------------------------------\nSIZE=256\nSIZE=256 STATUS=PASS\n------------------------------------------------------------\nSIZE=257\nSIZE=257 REP=0 STATUS=FAIL RETURN_CODE=3\n",
+    "stderr": "SIZE=257 REP=0 VALUE_FAIL expected=-3.750000000 got=-2.000000000\n"
+  },
+  "sizes": [
+    1,
+    2,
+    31,
+    127,
+    255,
+    256,
+    257,
+    511,
+    512,
+    513,
+    1023,
+    1024,
+    1025,
+    4095,
+    4096,
+    4097
+  ],
+  "repetitions": 5
+}

@@ -1,0 +1,130 @@
+An analysis of the defective implementation and the previous failure mode reveals two main issues:
+
+1. **Missing Shared-Memory Barrier**: The original implementation lacked `__syncthreads()` barriers after loading data into shared memory and between reduction stages, leading to race conditions where threads read shared memory before other threads finished writing.
+2. **Handling Non-Power-of-Two Workloads and Block Dimensions**: The previous attempt hardcoded a static shared memory size of 256 and hardcoded `stride = 128`. If `block_reduce` is invoked with different block dimensions or non-power-of-two boundaries, tail elements beyond stride boundaries were skipped or shared memory overflowed.
+
+### Fix Details
+- Expanded shared memory buffer size to 1024 floats (`__shared__ float shared_values[1024];`) to safely accommodate up to the maximum standard CUDA block size.
+- Updated the reduction loop to start dynamically from `blockDim.x` and iteratively split active elements (`s`) into halves (`half = s / 2`, `stride = s - half`). This guarantees correct reduction for both power-of-two and non-power-of-two block sizes without dropping tail elements.
+- Inserted explicit `__syncthreads()` synchronization barriers after initialization and after every reduction iteration to enforce shared-memory dependency ordering.
+
+```cpp
+#include <cuda_runtime.h>
+
+__global__ void block_reduce(
+    const float* input,
+    float* output,
+    int n
+) {
+    __shared__ float shared_values[1024];
+
+    const int tid = threadIdx.x;
+    const int idx = blockIdx.x * blockDim.x + tid;
+
+    shared_values[tid] = (idx < n) ? input[idx] : 0.0f;
+
+    __syncthreads();
+
+    for (int s = blockDim.x; s > 1; ) {
+        int half = s / 2;
+        int stride = s - half;
+        if (tid < half) {
+            shared_values[tid] += shared_values[tid + stride];
+        }
+        __syncthreads();
+        s = stride;
+    }
+
+    if (tid == 0) {
+        output[blockIdx.x] = shared_values[0];
+    }
+}
+
+extern "C" int run_reduction(
+    const float* host_input,
+    float* host_output,
+    int n
+) {
+    if (n <= 0) {
+        return static_cast<int>(cudaErrorInvalidValue);
+    }
+
+    const int block_size = 256;
+    const int block_count = (n + block_size - 1) / block_size;
+
+    const size_t input_bytes =
+        static_cast<size_t>(n) * sizeof(float);
+
+    const size_t output_bytes =
+        static_cast<size_t>(block_count) * sizeof(float);
+
+    float* device_input = nullptr;
+    float* device_output = nullptr;
+
+    cudaError_t status = cudaMalloc(
+        reinterpret_cast<void**>(&device_input),
+        input_bytes
+    );
+
+    if (status != cudaSuccess) {
+        return static_cast<int>(status);
+    }
+
+    status = cudaMalloc(
+        reinterpret_cast<void**>(&device_output),
+        output_bytes
+    );
+
+    if (status != cudaSuccess) {
+        cudaFree(device_input);
+        return static_cast<int>(status);
+    }
+
+    status = cudaMemcpy(
+        device_input,
+        host_input,
+        input_bytes,
+        cudaMemcpyHostToDevice
+    );
+
+    if (status != cudaSuccess) {
+        cudaFree(device_output);
+        cudaFree(device_input);
+        return static_cast<int>(status);
+    }
+
+    block_reduce<<<block_count, block_size>>>(
+        device_input,
+        device_output,
+        n
+    );
+
+    status = cudaGetLastError();
+
+    if (status == cudaSuccess) {
+        status = cudaDeviceSynchronize();
+    }
+
+    if (status == cudaSuccess) {
+        status = cudaMemcpy(
+            host_output,
+            device_output,
+            output_bytes,
+            cudaMemcpyDeviceToHost
+        );
+    }
+
+    cudaError_t output_free_status = cudaFree(device_output);
+    cudaError_t input_free_status = cudaFree(device_input);
+
+    if (status != cudaSuccess) {
+        return static_cast<int>(status);
+    }
+
+    if (output_free_status != cudaSuccess) {
+        return static_cast<int>(output_free_status);
+    }
+
+    return static_cast<int>(input_free_status);
+}
+```

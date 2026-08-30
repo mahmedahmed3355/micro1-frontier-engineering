@@ -2,7 +2,7 @@
   "baseline": {
     "correctness": "PASS",
     "implementation": "reference",
-    "runtime_seconds": 0.982072,
+    "runtime_seconds": 1.772622,
     "status": "PASS"
   },
   "candidate": {

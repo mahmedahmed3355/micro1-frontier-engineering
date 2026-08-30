@@ -1,0 +1,23 @@
+{
+  "case_id": "case_004",
+  "iteration": 3,
+  "model": "gemini-3.6-flash",
+  "previous_candidate_sha256": "1b0d34685d5aee73f70e829de44f9323323763ad3b5e9ff0d31475b914a010a6",
+  "candidate_sha256": "676bfa76b913be2f8c8fab81f4edea32154bee4b307ec600860e441389d8269a",
+  "candidate_path": "/kaggle/working/micro1-frontier-engineering/trajectories/benchmark/actual_kaggle_execution/case_004/candidate_iteration_3.cu",
+  "contract": {
+    "nonempty": true,
+    "run_reduction": true,
+    "global_kernel": true,
+    "block_reduce": true,
+    "cudaMalloc": true,
+    "cudaMemcpy": true,
+    "cudaFree": true,
+    "cudaDeviceSynchronize": true,
+    "syncthreads": true,
+    "no_cpu_sleep": true,
+    "no_gemm": true
+  },
+  "contract_status": "PASS",
+  "cuda_execution": false
+}
