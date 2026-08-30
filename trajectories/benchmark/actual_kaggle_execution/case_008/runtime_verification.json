@@ -1,0 +1,27 @@
+{
+  "case_id": "case_008",
+  "verification": "distributed_runtime",
+  "status": "PASS",
+  "world_size": 2,
+  "torch_version": "2.10.0+cu128",
+  "candidate_defect_confirmed": true,
+  "reference_normalization_confirmed": true,
+  "candidate_differs_from_reference": true,
+  "expected_candidate_parameter": 7.0,
+  "expected_reference_parameter": 8.5,
+  "candidate_parameters": [
+    7.0,
+    7.0
+  ],
+  "reference_parameters": [
+    8.5,
+    8.5
+  ],
+  "protected_files_unchanged": true,
+  "protected_hashes_before": {
+    "trajectory": "c722cf3fe192a70887270b4510c0d7e6a24232ee5b65b137510b221f4651791d",
+    "readme": "7111238fb77b592e7ddac82098aa05c835900e526ffa92051f8131a750e88330",
+    "source": "33983849f3c95f6966f1ef65275a3e8f11421ae35a9793827044df87e5599a2a",
+    "reference": "34e78e3e7a62f10a4b9342d08c6caeb3aa2ef229ef4e7ddfe2ceb78508bcde7b"
+  }
+}
