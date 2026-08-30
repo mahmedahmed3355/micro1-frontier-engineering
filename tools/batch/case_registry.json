@@ -1,0 +1,60 @@
+{
+  "benchmark": "GPU Engineering Agent Benchmark",
+  "version": "phase-2",
+  "execution_mode": "batch",
+  "cuda_execution": false,
+  "gemini_api": false,
+  "kaggle": false,
+  "cases": [
+    {
+      "case_id": "case_001",
+      "difficulty": "initial",
+      "path": "cases/case_001"
+    },
+    {
+      "case_id": "case_002",
+      "difficulty": "initial",
+      "path": "cases/case_002"
+    },
+    {
+      "case_id": "case_003",
+      "difficulty": "initial",
+      "path": "cases/case_003"
+    },
+    {
+      "case_id": "case_004",
+      "difficulty": "initial",
+      "path": "cases/case_004"
+    },
+    {
+      "case_id": "case_005",
+      "difficulty": "adversarial",
+      "path": "cases/case_005"
+    },
+    {
+      "case_id": "case_006",
+      "difficulty": "incremental",
+      "path": "cases/case_006"
+    },
+    {
+      "case_id": "case_007",
+      "difficulty": "incremental",
+      "path": "cases/case_007"
+    },
+    {
+      "case_id": "case_008",
+      "difficulty": "incremental",
+      "path": "cases/case_008"
+    },
+    {
+      "case_id": "case_009",
+      "difficulty": "incremental",
+      "path": "cases/case_009"
+    },
+    {
+      "case_id": "case_010",
+      "difficulty": "highest-initial-set",
+      "path": "cases/case_010"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "case_id": "case_003",
+  "name": "CUDA Stream Event Dependency Bug",
+  "domain": "CUDA Streams",
+  "bug_class": "missing inter-stream dependency",
+  "expected_behavior": "consumer work waits for producer completion",
+  "verification": "Execute repeated stream/event ordering tests and verify deterministic results and dependency correctness.",
+  "trajectory": "trajectory/case_003.jsonl",
+  "gemini_api_required": true,
+  "deterministic_verification_required": true,
+  "primary_failure": "consumer stream can execute before producer stream completes",
+  "verification_strategy": "stream dependency and deterministic output checks",
+  "required_runtime": [
+    "cuda"
+  ],
+  "status": "static-implementation",
+  "execution_status": "not-executed",
+  "cuda_execution": false,
+  "gemini_evaluation": false,
+  "trajectory_recording": "prepared"
+}

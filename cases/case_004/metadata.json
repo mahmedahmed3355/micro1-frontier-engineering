@@ -1,0 +1,21 @@
+{
+  "case_id": "case_004",
+  "name": "CUDA Synchronization Race Bug",
+  "domain": "CUDA Sync",
+  "bug_class": "missing shared-memory synchronization",
+  "expected_behavior": "dependent shared-memory stages are explicitly synchronized",
+  "verification": "Run repeated executions under synchronization-sensitive workloads and compare against a deterministic reference.",
+  "trajectory": "trajectory/case_004.jsonl",
+  "gemini_api_required": true,
+  "deterministic_verification_required": true,
+  "primary_failure": "reduction stages can observe shared-memory writes out of order",
+  "verification_strategy": "reduction correctness and synchronization contract checks",
+  "required_runtime": [
+    "cuda"
+  ],
+  "status": "static-implementation",
+  "execution_status": "not-executed",
+  "cuda_execution": false,
+  "gemini_evaluation": false,
+  "trajectory_recording": "prepared"
+}

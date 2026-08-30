@@ -1,0 +1,9 @@
+{
+  "case_id": "case_001",
+  "operation": "elementwise_vector_add",
+  "valid_index_rule": "0 <= idx < n",
+  "expected_result": "out[i] = a[i] + b[i] for every valid i",
+  "out_of_range_threads": "must not access logical input or output arrays",
+  "boundary_requirement": "must remain correct when n is not divisible by 256",
+  "determinism": true
+}

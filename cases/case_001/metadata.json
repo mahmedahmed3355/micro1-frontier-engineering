@@ -1,0 +1,26 @@
+{
+  "case_id": "case_001",
+  "name": "CUDA Kernel Indexing Boundary Bug",
+  "domain": "CUDA Kernel",
+  "bug_class": "indexing / boundary conditions",
+  "expected_behavior": "every valid element is processed exactly once",
+  "verification": {
+    "input_matrix": "tests/input_matrix.json",
+    "expected_behavior": "tests/expected_behavior.json",
+    "verification_matrix": "tests/verification_matrix.json",
+    "harness_contract": "tests/harness_contract.md"
+  },
+  "trajectory": "trajectory/case_001.jsonl",
+  "gemini_api_required": true,
+  "deterministic_verification_required": true,
+  "primary_failure": "invalid thread indexing or missing bounds guard",
+  "verification_strategy": "boundary sizes including non-multiples of block size",
+  "required_runtime": [
+    "cuda"
+  ],
+  "status": "harness-prepared",
+  "execution_status": "not-executed",
+  "cuda_execution": false,
+  "gemini_evaluation": false,
+  "trajectory_recording": "prepared"
+}

@@ -1,0 +1,16 @@
+{
+  "case_id": "case_005",
+  "name": "Adversarial CUDA Memory Lifetime Vector",
+  "domain": "CUDA Memory Management",
+  "bug_class": "control-flow-dependent resource lifetime leak",
+  "primary_failure": "successful execution returns without releasing the output device allocation",
+  "expected_behavior": "all owned device allocations are released on every reachable completion path",
+  "verification_strategy": "control-flow-aware static lifetime verification",
+  "required_runtime": [
+    "python",
+    "cuda"
+  ],
+  "trajectory_required": true,
+  "cuda_execution_required": false,
+  "gemini_api_required": false
+}

@@ -1,0 +1,18 @@
+{
+  "result_states": [
+    "PASS",
+    "FAIL",
+    "ERROR",
+    "TIMEOUT",
+    "SKIPPED"
+  ],
+  "required_fields": [
+    "case_id",
+    "status",
+    "duration_seconds",
+    "tests_passed",
+    "tests_failed",
+    "tests_error",
+    "trajectory"
+  ]
+}

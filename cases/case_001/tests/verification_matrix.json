@@ -1,0 +1,31 @@
+{
+  "case_id": "case_001",
+  "checks": [
+    {
+      "name": "single_element",
+      "sizes": [1]
+    },
+    {
+      "name": "sub_block",
+      "sizes": [2, 31, 127, 255]
+    },
+    {
+      "name": "exact_block",
+      "sizes": [256, 512, 1024]
+    },
+    {
+      "name": "one_past_block",
+      "sizes": [257, 513, 1025]
+    },
+    {
+      "name": "partial_final_block",
+      "sizes": [511, 1023, 4095, 4097]
+    }
+  ],
+  "requirements": {
+    "candidate_matches_reference": true,
+    "all_valid_elements_checked": true,
+    "boundary_sizes_required": true,
+    "repeated_execution_required": true
+  }
+}

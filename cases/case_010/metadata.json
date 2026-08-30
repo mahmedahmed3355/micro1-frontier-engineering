@@ -1,0 +1,18 @@
+{
+  "case_id": "case_010",
+  "name": "Full System Distributed GPU Configuration Bug",
+  "domain": "Distributed GPU Infrastructure",
+  "bug_class": "compound configuration/orchestration failure",
+  "primary_failure": "worker-local GPU configuration and distributed execution boundaries are incorrect",
+  "expected_behavior": "configuration propagates through the complete distributed GPU execution path",
+  "verification_strategy": "end-to-end deterministic system verification",
+  "required_runtime": [
+    "python",
+    "cuda",
+    "torch",
+    "distributed"
+  ],
+  "trajectory_required": true,
+  "cuda_execution_required": false,
+  "gemini_api_required": false
+}

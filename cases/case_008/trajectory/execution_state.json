@@ -1,0 +1,10 @@
+{
+  "case_id": "case_008",
+  "phase": "execution_preparation",
+  "defective_execution": "PENDING",
+  "reference_execution": "PENDING",
+  "verifier": "PENDING",
+  "trajectory_recording": "READY",
+  "cuda_execution": false,
+  "gemini_api_call": false
+}

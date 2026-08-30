@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "phase": "batch_execution_preparation",
+  "cases": [
+    "case_001",
+    "case_002",
+    "case_003",
+    "case_004",
+    "case_005",
+    "case_006",
+    "case_007",
+    "case_008",
+    "case_009",
+    "case_010"
+  ],
+  "execution_policy": {
+    "defective_first": true,
+    "reference_second": true,
+    "record_trajectory": true,
+    "gemini_api": false,
+    "cuda_execution": false,
+    "preserve_terminal": true
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "mode": "static-batch",
+  "cuda_execution": false,
+  "gemini_api": false,
+  "kaggle": false,
+  "results": [
+    {
+      "case_id": "case_001",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 7.9295,
+      "tests_passed": 1,
+      "tests_failed": 0,
+      "tests_error": 0,
+      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_001/trajectory"
+    },
+    {
+      "case_id": "case_002",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 1.2403,
+      "tests_passed": 1,
+      "tests_failed": 0,
+      "tests_error": 0,
+      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_002/trajectory"
+    },
+    {
+      "case_id": "case_003",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 1.2575,
+      "tests_passed": 1,
+      "tests_failed": 0,
+      "tests_error": 0,
+      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_003/trajectory"
+    },
+    {
+      "case_id": "case_004",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 1.2416,
+      "tests_passed": 1,
+      "tests_failed": 0,
+      "tests_error": 0,
+      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_004/trajectory"
+    },
+    {
+      "case_id": "case_005",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 1.3058,
+      "tests_passed": 1,
+      "tests_failed": 0,
+      "tests_error": 0,
+      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_005/trajectory"
+    },
+    {
+      "case_id": "case_006",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 1.237,
+      "tests_passed": 1,
+      "tests_failed": 0,
+      "tests_error": 0,
+      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_006/trajectory"
+    },
+    {
+      "case_id": "case_007",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 1.2,
+      "tests_passed": 1,
+      "tests_failed": 0,
+      "tests_error": 0,
+      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_007/trajectory"
+    },
+    {
+      "case_id": "case_008",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 1.2169,
+      "tests_passed": 1,
+      "tests_failed": 0,
+      "tests_error": 0,
+      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_008/trajectory"
+    },
+    {
+      "case_id": "case_009",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 1.1987,
+      "tests_passed": 1,
+      "tests_failed": 0,
+      "tests_error": 0,
+      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_009/trajectory"
+    },
+    {
+      "case_id": "case_010",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 1.2076,
+      "tests_passed": 1,
+      "tests_failed": 0,
+      "tests_error": 0,
+      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_010/trajectory"
+    }
+  ]
+}

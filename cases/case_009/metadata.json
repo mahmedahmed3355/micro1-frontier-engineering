@@ -1,0 +1,18 @@
+{
+  "case_id": "case_009",
+  "name": "Async Backend GPU Worker Bug",
+  "domain": "Async Backend GPU Execution",
+  "bug_class": "incorrect asynchronous execution boundary",
+  "primary_failure": "host-side consumption occurs before explicit GPU completion synchronization",
+  "expected_behavior": "GPU work is synchronized before host-side result consumption",
+  "verification_strategy": "async control-flow and GPU synchronization ordering",
+  "required_runtime": [
+    "python",
+    "torch",
+    "cuda",
+    "async"
+  ],
+  "trajectory_required": true,
+  "cuda_execution_required": false,
+  "gemini_api_required": false
+}

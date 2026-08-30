@@ -1,0 +1,22 @@
+{
+  "case_id": "case_006",
+  "name": "PyTorch CUDA Device Mismatch",
+  "domain": "PyTorch GPU",
+  "bug_class": "CPU/GPU or cross-device tensor mismatch",
+  "primary_failure": "operation combines tensors that are not guaranteed to use compatible devices",
+  "expected_behavior": "all participating tensors use the same execution device before computation",
+  "verification_strategy": "static device-consistency contract followed by runtime verification",
+  "required_runtime": [
+    "python",
+    "torch",
+    "cuda"
+  ],
+  "execution": {
+    "cuda": false,
+    "gemini": false
+  },
+  "trajectory": {
+    "prepared": true,
+    "recording_required": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "case_id": "case_002",
+  "name": "CUDA Host GPU Transfer Bug",
+  "domain": "CUDA Memory",
+  "bug_class": "host/device transfer ordering or pinned/pageable handling",
+  "expected_behavior": "host output is complete when the synchronous API returns",
+  "verification": "Run transfer correctness checks and validate results across pageable and pinned transfer paths.",
+  "trajectory": "trajectory/case_002.jsonl",
+  "gemini_api_required": true,
+  "deterministic_verification_required": true,
+  "primary_failure": "incorrect transfer completion or synchronization",
+  "verification_strategy": "deterministic transfer correctness and completion checks",
+  "required_runtime": [
+    "cuda"
+  ],
+  "status": "static-implementation",
+  "execution_status": "not-executed",
+  "cuda_execution": false,
+  "gemini_evaluation": false,
+  "trajectory_recording": "prepared"
+}

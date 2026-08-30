@@ -1,0 +1,17 @@
+{
+  "case_id": "case_007",
+  "name": "PyTorch DDP Synchronization Bug",
+  "domain": "Distributed Training",
+  "bug_class": "incorrect accumulation or communication boundary",
+  "primary_failure": "gradient communication occurs at the wrong optimization boundary",
+  "expected_behavior": "effective gradients match the intended optimization boundary",
+  "verification_strategy": "controlled accumulation versus reference update",
+  "required_runtime": [
+    "python",
+    "torch",
+    "distributed"
+  ],
+  "trajectory_required": true,
+  "cuda_execution_required": false,
+  "gemini_api_required": false
+}
