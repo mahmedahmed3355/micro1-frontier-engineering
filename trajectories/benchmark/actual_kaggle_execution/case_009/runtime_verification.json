@@ -1,0 +1,13 @@
+{
+  "case_id": "case_009",
+  "verification": "async_gpu_runtime",
+  "return_code": 1,
+  "status": "FAIL",
+  "protected_files_unchanged": true,
+  "source_sha256": "d3f515ff666a276c7304ab99079a56912864dbd276c6733a011d55affecc8921",
+  "reference_sha256": "135c39b41aa502c8d9a2e32380b28fe9670f7bb7df60f7c06a925f37d539b771",
+  "trajectory_sha256": "c86e39d300d27f842aaf5783029e6a466ebe855495f693238277d235b49cf0c4",
+  "readme_sha256": "91d40bf85be23b26da21f7122fe766cedb81b673d682a53ca229ee443769007c",
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5o66e8h0/case_009_runtime_harness.py\", line 162, in <module>\n    results = asyncio.run(main(sys.argv[1], sys.argv[2]))\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/runners.py\", line 195, in run\n    return runner.run(main)\n           ^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/base_events.py\", line 691, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/tmp/tmp5o66e8h0/case_009_runtime_harness.py\", line 54, in main\n    candidate_cpu = await run_case(source, False)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/tmp5o66e8h0/case_009_runtime_harness.py\", line 43, in run_case\n    result = await module.run_worker(work)\n                   ^^^^^^^^^^^^^^^^^\nAttributeError: module 'case009_candidate' has no attribute 'run_worker'. Did you mean: 'run_gpu_worker'?\n"
+}

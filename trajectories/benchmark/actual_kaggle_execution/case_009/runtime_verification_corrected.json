@@ -1,0 +1,14 @@
+{
+  "case_id": "case_009",
+  "verification": "async_gpu_runtime",
+  "runner_version": "corrected_run_gpu_worker",
+  "return_code": 0,
+  "status": "PASS",
+  "protected_files_unchanged": true,
+  "source_sha256": "d3f515ff666a276c7304ab99079a56912864dbd276c6733a011d55affecc8921",
+  "reference_sha256": "135c39b41aa502c8d9a2e32380b28fe9670f7bb7df60f7c06a925f37d539b771",
+  "trajectory_sha256": "c86e39d300d27f842aaf5783029e6a466ebe855495f693238277d235b49cf0c4",
+  "readme_sha256": "91d40bf85be23b26da21f7122fe766cedb81b673d682a53ca229ee443769007c",
+  "stdout": "RESULTS_BEGIN\n{'test': 'CPU_ASYNC_RESULT', 'candidate_device': 'cpu', 'reference_device': 'cpu', 'status': 'PASS'}\n{'test': 'CUDA_ASYNC_RESULT', 'candidate_device': 'cpu', 'reference_device': 'cpu', 'candidate_correct': True, 'reference_correct': True, 'candidate_matches_reference': True, 'status': 'PASS'}\n{'test': 'CUDA_REPEATED_ASYNC_EXECUTION', 'iterations': 10, 'status': 'PASS'}\nRESULTS_END\nTOTAL= 3\nFAILED= 0\nOVERALL_STATUS= PASS\n",
+  "stderr": ""
+}
