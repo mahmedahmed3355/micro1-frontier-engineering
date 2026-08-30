@@ -17,14 +17,23 @@ Current Scope
 The current benchmark contains ten cases:
 
 case_001
+
 case_002
+
 case_003
+
 case_004
+
 case_005
+
 case_006
+
 case_007
+
 case_008
+
 case_009
+
 case_010
 
 The cases are intentionally incremental in difficulty. Later cases introduce
@@ -37,11 +46,17 @@ Case Structure
 Each case follows the benchmark case structure:
 
 cases/case_XXX/
+
 ├── metadata.json
+
 ├── README.md
+
 ├── src/
+
 ├── reference/
+
 ├── tests/
+
 └── trajectory/
 
 The src directory contains the defective implementation.
