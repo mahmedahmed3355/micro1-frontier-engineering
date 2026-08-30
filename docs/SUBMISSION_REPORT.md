@@ -6,7 +6,7 @@ GPU Engineering Agent Benchmark
 
 ## Final Repository Commit
 
-b31e956d8d4cd05f156b31b5232bc5171214774e
+To be recorded after the documentation finalization commit.
 
 ## Benchmark Coverage
 
@@ -18,7 +18,7 @@ The finalized repository preserves the case implementations, reference implement
 
 Reference baseline results are stored under trajectories/benchmark/.
 
-Execution trajectories are stored under trajectories/execution/.
+Primary execution trajectories are stored under trajectories/execution/.
 
 Additional reference execution artifacts are stored under trajectories/reference_runs/.
 
@@ -27,6 +27,12 @@ Case-specific verification and finalization artifacts are preserved under trajec
 ## Agent Infrastructure
 
 The repository contains the Reader, Analyzer, Optimizer, Verifier, Gemini integration, orchestration, runtime, and benchmark tooling used by the project.
+
+## Historical Trajectory Integrity
+
+Historical trajectory records are preserved exactly as recorded.
+
+PENDING states appearing in historical trajectory records are not rewritten, deleted, or interpreted as successful execution.
 
 ## Security
 
@@ -44,8 +50,4 @@ Final video: pending.
 
 Final PDF: pending.
 
-README.md was intentionally left unchanged.
-
-## Generated
-
-2026-08-30T17:21:52
+README.md remains unchanged.

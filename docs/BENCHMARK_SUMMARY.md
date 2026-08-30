@@ -3,32 +3,52 @@
 ## Scope
 
 The repository contains 10 benchmark cases:
-case_001, case_002, case_003, case_004, case_005, case_006, case_007, case_008, case_009, case_010.
+
+case_001
+case_002
+case_003
+case_004
+case_005
+case_006
+case_007
+case_008
+case_009
+case_010
+
+Each case preserves its implementation, reference implementation, tests, metadata, and execution trajectory.
 
 ## Repository Evidence
 
 - Case directories: 10
-- Execution trajectory files: 10
-- Per-case baseline files: 10
-- Reference aggregate: True
+- Primary execution trajectories: 10
+- Per-case baseline records: 10
+- Reference aggregate: present
+- Benchmark-specific verification artifacts: present
 
 ## Reference Baseline
 
-Reference aggregate: present.
-Reference cases reported: 9. Passed: 9. Failed: 0.
+The preserved reference aggregate currently reports:
+
+- Reported reference cases: 9
+- Passed: 9
+- Failed: 0
+
+This document does not infer or invent a result for any case that is not represented in the aggregate result.
 
 ## Benchmark Infrastructure
 
-The repository contains the agent pipeline, orchestration components, verifier infrastructure, reference baseline tooling, execution trajectories, and benchmark evidence generated during the benchmark workflow.
+The repository contains the Reader, Analyzer, Optimizer, Verifier, orchestration, runtime, Gemini integration, benchmark tooling, reference baseline tooling, execution trajectories, and benchmark evidence generated during the benchmark workflow.
 
 ## Execution State
 
-Reference baseline evidence is preserved.
+Historical execution trajectories are preserved as recorded evidence.
 
-Candidate execution and any remaining GPU-dependent execution should be treated according to the recorded trajectory and verification artifacts rather than assumed from repository structure.
+Trajectory records containing states such as PENDING are intentionally preserved and are not rewritten during documentation finalization.
+
+Reference verification and finalization artifacts are preserved under trajectories/benchmark/agent_pipeline/.
 
 ## Submission Materials
 
 The final competition video and PDF submission document remain separate submission materials.
 
-README.md was not modified by this documentation pass.
+README.md is intentionally left unchanged.

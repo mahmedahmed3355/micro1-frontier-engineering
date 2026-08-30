@@ -18,3 +18,12 @@
 - Candidate Gemini execution: pending where not yet executed.
 - Final competition video: pending.
 - Final PDF submission document: pending.
+
+## Documentation Correction
+
+- Confirmed the benchmark scope as case_001 through case_010.
+- Documented the preserved reference aggregate exactly as recorded: 9 reported cases, 9 passed, 0 failed.
+- No result is inferred for an unreported case.
+- Preserved historical execution trajectories exactly as recorded, including PENDING states.
+- No trajectory, baseline, verification, case implementation, reference implementation, or test artifact was modified by this documentation pass.
+- README.md remains unchanged.
