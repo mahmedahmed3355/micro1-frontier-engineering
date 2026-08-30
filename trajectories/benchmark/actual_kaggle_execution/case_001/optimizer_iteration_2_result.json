@@ -1,0 +1,4 @@
+{
+  "candidate_sha256": "133ba0f458c6dd62e20bc4581b5b402a63aacafdc342c7205b1fd3f0711a2d64",
+  "candidate_source": "#include <cuda_runtime.h>\n\n__global__ void vector_add_kernel(\n    const float* __restrict__ a,\n    const float* __restrict__ b,\n    float* __restrict__ out,\n    int n\n) {\n    const int idx = blockIdx.x * blockDim.x + threadIdx.x;\n\n    if (idx < n) {\n        out[idx] = a[idx] + b[idx];\n    }\n}\n\nextern \"C\" void launch_vector_add(\n    const float* a,\n    const float* b,\n    float* out,\n    int n\n) {\n    if (n <= 0) return;\n\n    constexpr int block_size = 256;\n    const int grid_size = (n + block_size - 1) / block_size;\n\n    vector_add_kernel<<<grid_size, block_size>>>(a, b, out, n);\n}"
+}

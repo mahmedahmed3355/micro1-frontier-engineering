@@ -27,7 +27,7 @@
       "gemini_api_call": false,
       "implementation": "reference",
       "reference": "cases/case_002/reference/transfer.cu",
-      "runtime_seconds": 0.982072,
+      "runtime_seconds": 1.772622,
       "status": "PASS"
     },
     {
@@ -47,7 +47,7 @@
       "gemini_api_call": false,
       "implementation": "reference",
       "reference": "cases/case_003/reference/stream_dependency.cu",
-      "runtime_seconds": 0.954765,
+      "runtime_seconds": 1.013618,
       "status": "PASS"
     },
     {
@@ -67,7 +67,7 @@
       "gemini_api_call": false,
       "implementation": "reference",
       "reference": "cases/case_004/reference/reduction.cu",
-      "runtime_seconds": 0.96566,
+      "runtime_seconds": 0.970636,
       "status": "PASS"
     },
     {
@@ -87,7 +87,7 @@
       "gemini_api_call": false,
       "implementation": "reference",
       "reference": "cases/case_005/reference/lifetime.cu",
-      "runtime_seconds": 0.942765,
+      "runtime_seconds": 0.952019,
       "status": "PASS"
     },
     {
@@ -99,10 +99,10 @@
             "-m",
             "pytest",
             "-q",
-            "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_006/tests/test_contract.py"
+            "/kaggle/working/micro1-frontier-engineering/cases/case_006/tests/test_contract.py"
           ],
           "return_code": 0,
-          "runtime_seconds": 1.41816,
+          "runtime_seconds": 1.168882,
           "stderr": "",
           "stdout": "........                                                                 [100%]\n8 passed in 0.03s\n"
         }
@@ -116,7 +116,7 @@
       "execution_class": "PYTORCH",
       "gemini_api_call": false,
       "implementation": "reference",
-      "runtime_seconds": 1.41816,
+      "runtime_seconds": 1.168882,
       "status": "PASS"
     },
     {
@@ -128,10 +128,10 @@
             "-m",
             "pytest",
             "-q",
-            "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_007/tests/test_contract.py"
+            "/kaggle/working/micro1-frontier-engineering/cases/case_007/tests/test_contract.py"
           ],
           "return_code": 0,
-          "runtime_seconds": 1.127783,
+          "runtime_seconds": 1.167327,
           "stderr": "",
           "stdout": ".........                                                                [100%]\n9 passed in 0.03s\n"
         }
@@ -145,7 +145,7 @@
       "execution_class": "DISTRIBUTED_STATIC",
       "gemini_api_call": false,
       "implementation": "reference",
-      "runtime_seconds": 1.127783,
+      "runtime_seconds": 1.167327,
       "status": "PASS"
     },
     {
@@ -157,10 +157,10 @@
             "-m",
             "pytest",
             "-q",
-            "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_008/tests/test_contract.py"
+            "/kaggle/working/micro1-frontier-engineering/cases/case_008/tests/test_contract.py"
           ],
           "return_code": 0,
-          "runtime_seconds": 1.123731,
+          "runtime_seconds": 1.174999,
           "stderr": "",
           "stdout": "..........                                                               [100%]\n10 passed in 0.03s\n"
         }
@@ -174,7 +174,7 @@
       "execution_class": "DISTRIBUTED_STATIC",
       "gemini_api_call": false,
       "implementation": "reference",
-      "runtime_seconds": 1.123731,
+      "runtime_seconds": 1.174999,
       "status": "PASS"
     },
     {
@@ -186,12 +186,12 @@
             "-m",
             "pytest",
             "-q",
-            "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_009/tests/test_contract.py"
+            "/kaggle/working/micro1-frontier-engineering/cases/case_009/tests/test_contract.py"
           ],
           "return_code": 0,
-          "runtime_seconds": 1.128883,
+          "runtime_seconds": 1.196184,
           "stderr": "",
-          "stdout": "...........                                                              [100%]\n11 passed in 0.03s\n"
+          "stdout": "...........                                                              [100%]\n11 passed in 0.04s\n"
         }
       ],
       "correctness": "PASS",
@@ -203,7 +203,7 @@
       "execution_class": "PYTORCH",
       "gemini_api_call": false,
       "implementation": "reference",
-      "runtime_seconds": 1.128883,
+      "runtime_seconds": 1.196184,
       "status": "PASS"
     },
     {
@@ -215,10 +215,10 @@
             "-m",
             "pytest",
             "-q",
-            "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_010/tests/test_contract.py"
+            "/kaggle/working/micro1-frontier-engineering/cases/case_010/tests/test_contract.py"
           ],
           "return_code": 0,
-          "runtime_seconds": 1.15599,
+          "runtime_seconds": 1.138035,
           "stderr": "",
           "stdout": "...............                                                          [100%]\n15 passed in 0.03s\n"
         }
@@ -232,7 +232,7 @@
       "execution_class": "DISTRIBUTED_STATIC",
       "gemini_api_call": false,
       "implementation": "reference",
-      "runtime_seconds": 1.15599,
+      "runtime_seconds": 1.138035,
       "status": "PASS"
     }
   ],

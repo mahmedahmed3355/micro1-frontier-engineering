@@ -15,7 +15,7 @@
   "gemini_api_call": false,
   "implementation": "reference",
   "reference": "cases/case_003/reference/stream_dependency.cu",
-  "runtime_seconds": 0.954765,
+  "runtime_seconds": 1.013618,
   "schema_version": "1.0",
   "status": "PASS"
 }

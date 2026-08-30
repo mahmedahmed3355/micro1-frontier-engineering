@@ -1,0 +1,383 @@
+{
+  "case_id": "case_001",
+  "candidate_sha256": "133ba0f458c6dd62e20bc4581b5b402a63aacafdc342c7205b1fd3f0711a2d64",
+  "sizes": [
+    1,
+    2,
+    31,
+    127,
+    255,
+    256,
+    257,
+    511,
+    512,
+    513,
+    1023,
+    1024,
+    1025,
+    4095,
+    4097
+  ],
+  "results": [
+    {
+      "size": 1,
+      "decision": "REJECTED",
+      "compilation": {
+        "success": false,
+        "executable": "/kaggle/working/micro1-frontier-engineering/cases/case_001/.agent_artifacts/candidates/candidate-2-133ba0f458c6",
+        "stdout": "",
+        "stderr": "nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).\n/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':\n(.text+0x1b): undefined reference to `main'\ncollect2: error: ld returned 1 exit status\n",
+        "return_code": 1
+      },
+      "correctness": {
+        "passed": false,
+        "status": "NOT_RUN"
+      },
+      "performance": {
+        "status": "SKIPPED_UNTIL_CORRECT",
+        "qualifying": false
+      },
+      "feedback": {
+        "category": "compilation_failure",
+        "summary": "Candidate did not compile.",
+        "do_not_repeat_sha256": "133ba0f458c6dd62e20bc4581b5b402a63aacafdc342c7205b1fd3f0711a2d64"
+      }
+    },
+    {
+      "size": 2,
+      "decision": "REJECTED",
+      "compilation": {
+        "success": false,
+        "executable": "/kaggle/working/micro1-frontier-engineering/cases/case_001/.agent_artifacts/candidates/candidate-2-133ba0f458c6",
+        "stdout": "",
+        "stderr": "nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).\n/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':\n(.text+0x1b): undefined reference to `main'\ncollect2: error: ld returned 1 exit status\n",
+        "return_code": 1
+      },
+      "correctness": {
+        "passed": false,
+        "status": "NOT_RUN"
+      },
+      "performance": {
+        "status": "SKIPPED_UNTIL_CORRECT",
+        "qualifying": false
+      },
+      "feedback": {
+        "category": "compilation_failure",
+        "summary": "Candidate did not compile.",
+        "do_not_repeat_sha256": "133ba0f458c6dd62e20bc4581b5b402a63aacafdc342c7205b1fd3f0711a2d64"
+      }
+    },
+    {
+      "size": 31,
+      "decision": "REJECTED",
+      "compilation": {
+        "success": false,
+        "executable": "/kaggle/working/micro1-frontier-engineering/cases/case_001/.agent_artifacts/candidates/candidate-2-133ba0f458c6",
+        "stdout": "",
+        "stderr": "nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).\n/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':\n(.text+0x1b): undefined reference to `main'\ncollect2: error: ld returned 1 exit status\n",
+        "return_code": 1
+      },
+      "correctness": {
+        "passed": false,
+        "status": "NOT_RUN"
+      },
+      "performance": {
+        "status": "SKIPPED_UNTIL_CORRECT",
+        "qualifying": false
+      },
+      "feedback": {
+        "category": "compilation_failure",
+        "summary": "Candidate did not compile.",
+        "do_not_repeat_sha256": "133ba0f458c6dd62e20bc4581b5b402a63aacafdc342c7205b1fd3f0711a2d64"
+      }
+    },
+    {
+      "size": 127,
+      "decision": "REJECTED",
+      "compilation": {
+        "success": false,
+        "executable": "/kaggle/working/micro1-frontier-engineering/cases/case_001/.agent_artifacts/candidates/candidate-2-133ba0f458c6",
+        "stdout": "",
+        "stderr": "nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).\n/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':\n(.text+0x1b): undefined reference to `main'\ncollect2: error: ld returned 1 exit status\n",
+        "return_code": 1
+      },
+      "correctness": {
+        "passed": false,
+        "status": "NOT_RUN"
+      },
+      "performance": {
+        "status": "SKIPPED_UNTIL_CORRECT",
+        "qualifying": false
+      },
+      "feedback": {
+        "category": "compilation_failure",
+        "summary": "Candidate did not compile.",
+        "do_not_repeat_sha256": "133ba0f458c6dd62e20bc4581b5b402a63aacafdc342c7205b1fd3f0711a2d64"
+      }
+    },
+    {
+      "size": 255,
+      "decision": "REJECTED",
+      "compilation": {
+        "success": false,
+        "executable": "/kaggle/working/micro1-frontier-engineering/cases/case_001/.agent_artifacts/candidates/candidate-2-133ba0f458c6",
+        "stdout": "",
+        "stderr": "nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).\n/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':\n(.text+0x1b): undefined reference to `main'\ncollect2: error: ld returned 1 exit status\n",
+        "return_code": 1
+      },
+      "correctness": {
+        "passed": false,
+        "status": "NOT_RUN"
+      },
+      "performance": {
+        "status": "SKIPPED_UNTIL_CORRECT",
+        "qualifying": false
+      },
+      "feedback": {
+        "category": "compilation_failure",
+        "summary": "Candidate did not compile.",
+        "do_not_repeat_sha256": "133ba0f458c6dd62e20bc4581b5b402a63aacafdc342c7205b1fd3f0711a2d64"
+      }
+    },
+    {
+      "size": 256,
+      "decision": "REJECTED",
+      "compilation": {
+        "success": false,
+        "executable": "/kaggle/working/micro1-frontier-engineering/cases/case_001/.agent_artifacts/candidates/candidate-2-133ba0f458c6",
+        "stdout": "",
+        "stderr": "nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).\n/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':\n(.text+0x1b): undefined reference to `main'\ncollect2: error: ld returned 1 exit status\n",
+        "return_code": 1
+      },
+      "correctness": {
+        "passed": false,
+        "status": "NOT_RUN"
+      },
+      "performance": {
+        "status": "SKIPPED_UNTIL_CORRECT",
+        "qualifying": false
+      },
+      "feedback": {
+        "category": "compilation_failure",
+        "summary": "Candidate did not compile.",
+        "do_not_repeat_sha256": "133ba0f458c6dd62e20bc4581b5b402a63aacafdc342c7205b1fd3f0711a2d64"
+      }
+    },
+    {
+      "size": 257,
+      "decision": "REJECTED",
+      "compilation": {
+        "success": false,
+        "executable": "/kaggle/working/micro1-frontier-engineering/cases/case_001/.agent_artifacts/candidates/candidate-2-133ba0f458c6",
+        "stdout": "",
+        "stderr": "nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).\n/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':\n(.text+0x1b): undefined reference to `main'\ncollect2: error: ld returned 1 exit status\n",
+        "return_code": 1
+      },
+      "correctness": {
+        "passed": false,
+        "status": "NOT_RUN"
+      },
+      "performance": {
+        "status": "SKIPPED_UNTIL_CORRECT",
+        "qualifying": false
+      },
+      "feedback": {
+        "category": "compilation_failure",
+        "summary": "Candidate did not compile.",
+        "do_not_repeat_sha256": "133ba0f458c6dd62e20bc4581b5b402a63aacafdc342c7205b1fd3f0711a2d64"
+      }
+    },
+    {
+      "size": 511,
+      "decision": "REJECTED",
+      "compilation": {
+        "success": false,
+        "executable": "/kaggle/working/micro1-frontier-engineering/cases/case_001/.agent_artifacts/candidates/candidate-2-133ba0f458c6",
+        "stdout": "",
+        "stderr": "nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).\n/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':\n(.text+0x1b): undefined reference to `main'\ncollect2: error: ld returned 1 exit status\n",
+        "return_code": 1
+      },
+      "correctness": {
+        "passed": false,
+        "status": "NOT_RUN"
+      },
+      "performance": {
+        "status": "SKIPPED_UNTIL_CORRECT",
+        "qualifying": false
+      },
+      "feedback": {
+        "category": "compilation_failure",
+        "summary": "Candidate did not compile.",
+        "do_not_repeat_sha256": "133ba0f458c6dd62e20bc4581b5b402a63aacafdc342c7205b1fd3f0711a2d64"
+      }
+    },
+    {
+      "size": 512,
+      "decision": "REJECTED",
+      "compilation": {
+        "success": false,
+        "executable": "/kaggle/working/micro1-frontier-engineering/cases/case_001/.agent_artifacts/candidates/candidate-2-133ba0f458c6",
+        "stdout": "",
+        "stderr": "nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).\n/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':\n(.text+0x1b): undefined reference to `main'\ncollect2: error: ld returned 1 exit status\n",
+        "return_code": 1
+      },
+      "correctness": {
+        "passed": false,
+        "status": "NOT_RUN"
+      },
+      "performance": {
+        "status": "SKIPPED_UNTIL_CORRECT",
+        "qualifying": false
+      },
+      "feedback": {
+        "category": "compilation_failure",
+        "summary": "Candidate did not compile.",
+        "do_not_repeat_sha256": "133ba0f458c6dd62e20bc4581b5b402a63aacafdc342c7205b1fd3f0711a2d64"
+      }
+    },
+    {
+      "size": 513,
+      "decision": "REJECTED",
+      "compilation": {
+        "success": false,
+        "executable": "/kaggle/working/micro1-frontier-engineering/cases/case_001/.agent_artifacts/candidates/candidate-2-133ba0f458c6",
+        "stdout": "",
+        "stderr": "nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).\n/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':\n(.text+0x1b): undefined reference to `main'\ncollect2: error: ld returned 1 exit status\n",
+        "return_code": 1
+      },
+      "correctness": {
+        "passed": false,
+        "status": "NOT_RUN"
+      },
+      "performance": {
+        "status": "SKIPPED_UNTIL_CORRECT",
+        "qualifying": false
+      },
+      "feedback": {
+        "category": "compilation_failure",
+        "summary": "Candidate did not compile.",
+        "do_not_repeat_sha256": "133ba0f458c6dd62e20bc4581b5b402a63aacafdc342c7205b1fd3f0711a2d64"
+      }
+    },
+    {
+      "size": 1023,
+      "decision": "REJECTED",
+      "compilation": {
+        "success": false,
+        "executable": "/kaggle/working/micro1-frontier-engineering/cases/case_001/.agent_artifacts/candidates/candidate-2-133ba0f458c6",
+        "stdout": "",
+        "stderr": "nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).\n/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':\n(.text+0x1b): undefined reference to `main'\ncollect2: error: ld returned 1 exit status\n",
+        "return_code": 1
+      },
+      "correctness": {
+        "passed": false,
+        "status": "NOT_RUN"
+      },
+      "performance": {
+        "status": "SKIPPED_UNTIL_CORRECT",
+        "qualifying": false
+      },
+      "feedback": {
+        "category": "compilation_failure",
+        "summary": "Candidate did not compile.",
+        "do_not_repeat_sha256": "133ba0f458c6dd62e20bc4581b5b402a63aacafdc342c7205b1fd3f0711a2d64"
+      }
+    },
+    {
+      "size": 1024,
+      "decision": "REJECTED",
+      "compilation": {
+        "success": false,
+        "executable": "/kaggle/working/micro1-frontier-engineering/cases/case_001/.agent_artifacts/candidates/candidate-2-133ba0f458c6",
+        "stdout": "",
+        "stderr": "nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).\n/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':\n(.text+0x1b): undefined reference to `main'\ncollect2: error: ld returned 1 exit status\n",
+        "return_code": 1
+      },
+      "correctness": {
+        "passed": false,
+        "status": "NOT_RUN"
+      },
+      "performance": {
+        "status": "SKIPPED_UNTIL_CORRECT",
+        "qualifying": false
+      },
+      "feedback": {
+        "category": "compilation_failure",
+        "summary": "Candidate did not compile.",
+        "do_not_repeat_sha256": "133ba0f458c6dd62e20bc4581b5b402a63aacafdc342c7205b1fd3f0711a2d64"
+      }
+    },
+    {
+      "size": 1025,
+      "decision": "REJECTED",
+      "compilation": {
+        "success": false,
+        "executable": "/kaggle/working/micro1-frontier-engineering/cases/case_001/.agent_artifacts/candidates/candidate-2-133ba0f458c6",
+        "stdout": "",
+        "stderr": "nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).\n/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':\n(.text+0x1b): undefined reference to `main'\ncollect2: error: ld returned 1 exit status\n",
+        "return_code": 1
+      },
+      "correctness": {
+        "passed": false,
+        "status": "NOT_RUN"
+      },
+      "performance": {
+        "status": "SKIPPED_UNTIL_CORRECT",
+        "qualifying": false
+      },
+      "feedback": {
+        "category": "compilation_failure",
+        "summary": "Candidate did not compile.",
+        "do_not_repeat_sha256": "133ba0f458c6dd62e20bc4581b5b402a63aacafdc342c7205b1fd3f0711a2d64"
+      }
+    },
+    {
+      "size": 4095,
+      "decision": "REJECTED",
+      "compilation": {
+        "success": false,
+        "executable": "/kaggle/working/micro1-frontier-engineering/cases/case_001/.agent_artifacts/candidates/candidate-2-133ba0f458c6",
+        "stdout": "",
+        "stderr": "nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).\n/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':\n(.text+0x1b): undefined reference to `main'\ncollect2: error: ld returned 1 exit status\n",
+        "return_code": 1
+      },
+      "correctness": {
+        "passed": false,
+        "status": "NOT_RUN"
+      },
+      "performance": {
+        "status": "SKIPPED_UNTIL_CORRECT",
+        "qualifying": false
+      },
+      "feedback": {
+        "category": "compilation_failure",
+        "summary": "Candidate did not compile.",
+        "do_not_repeat_sha256": "133ba0f458c6dd62e20bc4581b5b402a63aacafdc342c7205b1fd3f0711a2d64"
+      }
+    },
+    {
+      "size": 4097,
+      "decision": "REJECTED",
+      "compilation": {
+        "success": false,
+        "executable": "/kaggle/working/micro1-frontier-engineering/cases/case_001/.agent_artifacts/candidates/candidate-2-133ba0f458c6",
+        "stdout": "",
+        "stderr": "nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).\n/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':\n(.text+0x1b): undefined reference to `main'\ncollect2: error: ld returned 1 exit status\n",
+        "return_code": 1
+      },
+      "correctness": {
+        "passed": false,
+        "status": "NOT_RUN"
+      },
+      "performance": {
+        "status": "SKIPPED_UNTIL_CORRECT",
+        "qualifying": false
+      },
+      "feedback": {
+        "category": "compilation_failure",
+        "summary": "Candidate did not compile.",
+        "do_not_repeat_sha256": "133ba0f458c6dd62e20bc4581b5b402a63aacafdc342c7205b1fd3f0711a2d64"
+      }
+    }
+  ]
+}

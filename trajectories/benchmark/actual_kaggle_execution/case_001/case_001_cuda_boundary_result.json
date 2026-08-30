@@ -1,0 +1,131 @@
+{
+  "case_id": "case_001",
+  "candidate": "/kaggle/working/micro1-frontier-engineering/trajectories/benchmark/actual_kaggle_execution/case_001/candidate_iteration_2.cu",
+  "sizes": [
+    1,
+    2,
+    31,
+    127,
+    255,
+    256,
+    257,
+    511,
+    512,
+    513,
+    1023,
+    1024,
+    1025,
+    4095,
+    4097
+  ],
+  "total": 15,
+  "passed": 15,
+  "failed": 0,
+  "results": [
+    {
+      "size": 1,
+      "status": "PASS",
+      "return_code": 0,
+      "stdout": "SIZE=1\nRESULT=PASS\n",
+      "stderr": ""
+    },
+    {
+      "size": 2,
+      "status": "PASS",
+      "return_code": 0,
+      "stdout": "SIZE=2\nRESULT=PASS\n",
+      "stderr": ""
+    },
+    {
+      "size": 31,
+      "status": "PASS",
+      "return_code": 0,
+      "stdout": "SIZE=31\nRESULT=PASS\n",
+      "stderr": ""
+    },
+    {
+      "size": 127,
+      "status": "PASS",
+      "return_code": 0,
+      "stdout": "SIZE=127\nRESULT=PASS\n",
+      "stderr": ""
+    },
+    {
+      "size": 255,
+      "status": "PASS",
+      "return_code": 0,
+      "stdout": "SIZE=255\nRESULT=PASS\n",
+      "stderr": ""
+    },
+    {
+      "size": 256,
+      "status": "PASS",
+      "return_code": 0,
+      "stdout": "SIZE=256\nRESULT=PASS\n",
+      "stderr": ""
+    },
+    {
+      "size": 257,
+      "status": "PASS",
+      "return_code": 0,
+      "stdout": "SIZE=257\nRESULT=PASS\n",
+      "stderr": ""
+    },
+    {
+      "size": 511,
+      "status": "PASS",
+      "return_code": 0,
+      "stdout": "SIZE=511\nRESULT=PASS\n",
+      "stderr": ""
+    },
+    {
+      "size": 512,
+      "status": "PASS",
+      "return_code": 0,
+      "stdout": "SIZE=512\nRESULT=PASS\n",
+      "stderr": ""
+    },
+    {
+      "size": 513,
+      "status": "PASS",
+      "return_code": 0,
+      "stdout": "SIZE=513\nRESULT=PASS\n",
+      "stderr": ""
+    },
+    {
+      "size": 1023,
+      "status": "PASS",
+      "return_code": 0,
+      "stdout": "SIZE=1023\nRESULT=PASS\n",
+      "stderr": ""
+    },
+    {
+      "size": 1024,
+      "status": "PASS",
+      "return_code": 0,
+      "stdout": "SIZE=1024\nRESULT=PASS\n",
+      "stderr": ""
+    },
+    {
+      "size": 1025,
+      "status": "PASS",
+      "return_code": 0,
+      "stdout": "SIZE=1025\nRESULT=PASS\n",
+      "stderr": ""
+    },
+    {
+      "size": 4095,
+      "status": "PASS",
+      "return_code": 0,
+      "stdout": "SIZE=4095\nRESULT=PASS\n",
+      "stderr": ""
+    },
+    {
+      "size": 4097,
+      "status": "PASS",
+      "return_code": 0,
+      "stdout": "SIZE=4097\nRESULT=PASS\n",
+      "stderr": ""
+    }
+  ]
+}

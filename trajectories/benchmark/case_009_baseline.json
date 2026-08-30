@@ -7,12 +7,12 @@
         "-m",
         "pytest",
         "-q",
-        "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_009/tests/test_contract.py"
+        "/kaggle/working/micro1-frontier-engineering/cases/case_009/tests/test_contract.py"
       ],
       "return_code": 0,
-      "runtime_seconds": 1.128883,
+      "runtime_seconds": 1.196184,
       "stderr": "",
-      "stdout": "...........                                                              [100%]\n11 passed in 0.03s\n"
+      "stdout": "...........                                                              [100%]\n11 passed in 0.04s\n"
     }
   ],
   "correctness": "PASS",
@@ -24,7 +24,7 @@
   "execution_class": "PYTORCH",
   "gemini_api_call": false,
   "implementation": "reference",
-  "runtime_seconds": 1.128883,
+  "runtime_seconds": 1.196184,
   "schema_version": "1.0",
   "status": "PASS"
 }

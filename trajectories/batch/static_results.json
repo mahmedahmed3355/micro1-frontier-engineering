@@ -8,101 +8,101 @@
       "case_id": "case_001",
       "status": "PASS",
       "return_code": 0,
-      "duration_seconds": 7.9295,
+      "duration_seconds": 1.1679,
       "tests_passed": 1,
       "tests_failed": 0,
       "tests_error": 0,
-      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_001/trajectory"
+      "trajectory": "/kaggle/working/micro1-frontier-engineering/cases/case_001/trajectory"
     },
     {
       "case_id": "case_002",
       "status": "PASS",
       "return_code": 0,
-      "duration_seconds": 1.2403,
+      "duration_seconds": 1.1734,
       "tests_passed": 1,
       "tests_failed": 0,
       "tests_error": 0,
-      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_002/trajectory"
+      "trajectory": "/kaggle/working/micro1-frontier-engineering/cases/case_002/trajectory"
     },
     {
       "case_id": "case_003",
       "status": "PASS",
       "return_code": 0,
-      "duration_seconds": 1.2575,
+      "duration_seconds": 1.172,
       "tests_passed": 1,
       "tests_failed": 0,
       "tests_error": 0,
-      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_003/trajectory"
+      "trajectory": "/kaggle/working/micro1-frontier-engineering/cases/case_003/trajectory"
     },
     {
       "case_id": "case_004",
       "status": "PASS",
       "return_code": 0,
-      "duration_seconds": 1.2416,
+      "duration_seconds": 1.1554,
       "tests_passed": 1,
       "tests_failed": 0,
       "tests_error": 0,
-      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_004/trajectory"
+      "trajectory": "/kaggle/working/micro1-frontier-engineering/cases/case_004/trajectory"
     },
     {
       "case_id": "case_005",
       "status": "PASS",
       "return_code": 0,
-      "duration_seconds": 1.3058,
+      "duration_seconds": 1.1426,
       "tests_passed": 1,
       "tests_failed": 0,
       "tests_error": 0,
-      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_005/trajectory"
+      "trajectory": "/kaggle/working/micro1-frontier-engineering/cases/case_005/trajectory"
     },
     {
       "case_id": "case_006",
       "status": "PASS",
       "return_code": 0,
-      "duration_seconds": 1.237,
+      "duration_seconds": 1.132,
       "tests_passed": 1,
       "tests_failed": 0,
       "tests_error": 0,
-      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_006/trajectory"
+      "trajectory": "/kaggle/working/micro1-frontier-engineering/cases/case_006/trajectory"
     },
     {
       "case_id": "case_007",
       "status": "PASS",
       "return_code": 0,
-      "duration_seconds": 1.2,
+      "duration_seconds": 1.1378,
       "tests_passed": 1,
       "tests_failed": 0,
       "tests_error": 0,
-      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_007/trajectory"
+      "trajectory": "/kaggle/working/micro1-frontier-engineering/cases/case_007/trajectory"
     },
     {
       "case_id": "case_008",
       "status": "PASS",
       "return_code": 0,
-      "duration_seconds": 1.2169,
+      "duration_seconds": 1.1975,
       "tests_passed": 1,
       "tests_failed": 0,
       "tests_error": 0,
-      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_008/trajectory"
+      "trajectory": "/kaggle/working/micro1-frontier-engineering/cases/case_008/trajectory"
     },
     {
       "case_id": "case_009",
       "status": "PASS",
       "return_code": 0,
-      "duration_seconds": 1.1987,
+      "duration_seconds": 1.1499,
       "tests_passed": 1,
       "tests_failed": 0,
       "tests_error": 0,
-      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_009/trajectory"
+      "trajectory": "/kaggle/working/micro1-frontier-engineering/cases/case_009/trajectory"
     },
     {
       "case_id": "case_010",
       "status": "PASS",
       "return_code": 0,
-      "duration_seconds": 1.2076,
+      "duration_seconds": 1.1327,
       "tests_passed": 1,
       "tests_failed": 0,
       "tests_error": 0,
-      "trajectory": "/home/mohamed/Desktop/GPU Engineering Agent Benchmark/cases/case_010/trajectory"
+      "trajectory": "/kaggle/working/micro1-frontier-engineering/cases/case_010/trajectory"
     }
   ]
 }

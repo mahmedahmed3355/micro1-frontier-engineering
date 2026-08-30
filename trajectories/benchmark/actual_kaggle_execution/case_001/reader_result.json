@@ -1,0 +1,37 @@
+{
+  "code_map": {
+    "benchmark_and_correctness": "BASELINE=Not specified\nBENCHMARK=Do not change math op or caller interface, do not assume input size is block-multiple, handle arbitrary positive sizes\nCORRECTNESS=Valid output elements (0 to N-1) must equal input sum; out-of-bounds threads must not access arrays",
+    "input_files": [
+      "README.md",
+      "reference/README.md",
+      "reference/kernel.cu",
+      "src/README.md",
+      "src/kernel.cu"
+    ],
+    "inputs_outputs_launch": "INPUTS=a, b\nOUTPUT=out\nBLOCK=256",
+    "inspected_files": [
+      {
+        "path": "README.md",
+        "size_bytes": 3012
+      },
+      {
+        "path": "reference/README.md",
+        "size_bytes": 238
+      },
+      {
+        "path": "reference/kernel.cu",
+        "size_bytes": 525
+      },
+      {
+        "path": "src/README.md",
+        "size_bytes": 352
+      },
+      {
+        "path": "src/kernel.cu",
+        "size_bytes": 701
+      }
+    ],
+    "kernel_and_entry_point": "KERNEL=vector_add_kernel\nENTRY=launch_vector_add",
+    "reader_backend": "gemini"
+  }
+}

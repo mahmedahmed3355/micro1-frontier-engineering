@@ -1,0 +1,223 @@
+{
+  "benchmark": "GPU Engineering Agent Benchmark",
+  "cases": [
+    {
+      "case_id": "case_001",
+      "duration_seconds": 123.587419,
+      "error": "KeyError('case_dir')",
+      "model": "gemini-3.6-flash",
+      "pipeline": [
+        {
+          "agent": "reader",
+          "status": "PASS"
+        },
+        {
+          "agent": "analyzer",
+          "status": "PASS"
+        },
+        {
+          "agent": "optimizer",
+          "status": "PASS"
+        }
+      ],
+      "status": "ERROR"
+    },
+    {
+      "case_id": "case_002",
+      "duration_seconds": 98.189355,
+      "error": "KeyError('case_dir')",
+      "model": "gemini-3.6-flash",
+      "pipeline": [
+        {
+          "agent": "reader",
+          "status": "PASS"
+        },
+        {
+          "agent": "analyzer",
+          "status": "PASS"
+        },
+        {
+          "agent": "optimizer",
+          "status": "PASS"
+        }
+      ],
+      "status": "ERROR"
+    },
+    {
+      "case_id": "case_003",
+      "duration_seconds": 131.644063,
+      "error": "KeyError('case_dir')",
+      "model": "gemini-3.6-flash",
+      "pipeline": [
+        {
+          "agent": "reader",
+          "status": "PASS"
+        },
+        {
+          "agent": "analyzer",
+          "status": "PASS"
+        },
+        {
+          "agent": "optimizer",
+          "status": "PASS"
+        }
+      ],
+      "status": "ERROR"
+    },
+    {
+      "case_id": "case_004",
+      "duration_seconds": 103.25299,
+      "error": "KeyError('case_dir')",
+      "model": "gemini-3.6-flash",
+      "pipeline": [
+        {
+          "agent": "reader",
+          "status": "PASS"
+        },
+        {
+          "agent": "analyzer",
+          "status": "PASS"
+        },
+        {
+          "agent": "optimizer",
+          "status": "PASS"
+        }
+      ],
+      "status": "ERROR"
+    },
+    {
+      "case_id": "case_005",
+      "duration_seconds": 73.194362,
+      "error": "KeyError('case_dir')",
+      "model": "gemini-3.6-flash",
+      "pipeline": [
+        {
+          "agent": "reader",
+          "status": "PASS"
+        },
+        {
+          "agent": "analyzer",
+          "status": "PASS"
+        },
+        {
+          "agent": "optimizer",
+          "status": "PASS"
+        }
+      ],
+      "status": "ERROR"
+    },
+    {
+      "case_id": "case_006",
+      "duration_seconds": 92.331088,
+      "error": "KeyError('case_dir')",
+      "model": "gemini-3.6-flash",
+      "pipeline": [
+        {
+          "agent": "reader",
+          "status": "PASS"
+        },
+        {
+          "agent": "analyzer",
+          "status": "PASS"
+        },
+        {
+          "agent": "optimizer",
+          "status": "PASS"
+        }
+      ],
+      "status": "ERROR"
+    },
+    {
+      "case_id": "case_007",
+      "duration_seconds": 59.740612,
+      "error": "KeyError('case_dir')",
+      "model": "gemini-3.6-flash",
+      "pipeline": [
+        {
+          "agent": "reader",
+          "status": "PASS"
+        },
+        {
+          "agent": "analyzer",
+          "status": "PASS"
+        },
+        {
+          "agent": "optimizer",
+          "status": "PASS"
+        }
+      ],
+      "status": "ERROR"
+    },
+    {
+      "case_id": "case_008",
+      "duration_seconds": 95.290577,
+      "error": "KeyError('case_dir')",
+      "model": "gemini-3.6-flash",
+      "pipeline": [
+        {
+          "agent": "reader",
+          "status": "PASS"
+        },
+        {
+          "agent": "analyzer",
+          "status": "PASS"
+        },
+        {
+          "agent": "optimizer",
+          "status": "PASS"
+        }
+      ],
+      "status": "ERROR"
+    },
+    {
+      "case_id": "case_009",
+      "duration_seconds": 58.729312,
+      "error": "KeyError('case_dir')",
+      "model": "gemini-3.6-flash",
+      "pipeline": [
+        {
+          "agent": "reader",
+          "status": "PASS"
+        },
+        {
+          "agent": "analyzer",
+          "status": "PASS"
+        },
+        {
+          "agent": "optimizer",
+          "status": "PASS"
+        }
+      ],
+      "status": "ERROR"
+    },
+    {
+      "case_id": "case_010",
+      "duration_seconds": 74.068304,
+      "error": "KeyError('case_dir')",
+      "model": "gemini-3.6-flash",
+      "pipeline": [
+        {
+          "agent": "reader",
+          "status": "PASS"
+        },
+        {
+          "agent": "analyzer",
+          "status": "PASS"
+        },
+        {
+          "agent": "optimizer",
+          "status": "PASS"
+        }
+      ],
+      "status": "ERROR"
+    }
+  ],
+  "execution_mode": "actual_gemini_agent_pipeline",
+  "model": "gemini-3.6-flash",
+  "summary": {
+    "errors": 10,
+    "failed": 0,
+    "passed": 0,
+    "total": 10
+  }
+}

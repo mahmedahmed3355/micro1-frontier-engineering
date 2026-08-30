@@ -1,0 +1,17 @@
+{
+  "candidate_sha256": "133ba0f458c6dd62e20bc4581b5b402a63aacafdc342c7205b1fd3f0711a2d64",
+  "case_id": "case_001",
+  "checks": {
+    "bounds_guard": true,
+    "index_calculation": true,
+    "launch_vector_add": true,
+    "no_gemm": true,
+    "no_previous_candidate": true,
+    "nonempty": true,
+    "vector_add_kernel": true,
+    "vector_inputs": true
+  },
+  "cuda_execution": false,
+  "iteration": 2,
+  "verifier_execution": false
+}

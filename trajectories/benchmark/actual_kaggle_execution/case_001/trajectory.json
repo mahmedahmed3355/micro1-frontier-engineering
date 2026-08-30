@@ -1,0 +1,9 @@
+{
+  "case_id": "case_001",
+  "duration_seconds": 0.239038,
+  "error": "ClientError(\"404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.', 'status': 'NOT_FOUND'}}\")",
+  "finished_at": 1788102829.0777152,
+  "pipeline": [],
+  "started_at": 1788102828.838667,
+  "status": "ERROR"
+}

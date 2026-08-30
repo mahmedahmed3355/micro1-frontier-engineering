@@ -1,0 +1,15 @@
+{
+  "case_id": "case_001",
+  "candidate_sha256": "88b0522738392417a23d31918356554b73bf3b50857ef5cf797b177247fa2849",
+  "checks": {
+    "candidate_nonempty": true,
+    "vector_add_kernel": true,
+    "launch_vector_add": true,
+    "vector_inputs": true,
+    "index_calculation": true,
+    "bounds_guard": false,
+    "no_gemm_kernel": true
+  },
+  "cuda_execution": false,
+  "verifier_execution": false
+}

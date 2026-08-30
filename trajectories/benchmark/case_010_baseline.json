@@ -7,10 +7,10 @@
         "-m",
         "pytest",
         "-q",
-        "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_010/tests/test_contract.py"
+        "/kaggle/working/micro1-frontier-engineering/cases/case_010/tests/test_contract.py"
       ],
       "return_code": 0,
-      "runtime_seconds": 1.15599,
+      "runtime_seconds": 1.138035,
       "stderr": "",
       "stdout": "...............                                                          [100%]\n15 passed in 0.03s\n"
     }
@@ -24,7 +24,7 @@
   "execution_class": "DISTRIBUTED_STATIC",
   "gemini_api_call": false,
   "implementation": "reference",
-  "runtime_seconds": 1.15599,
+  "runtime_seconds": 1.138035,
   "schema_version": "1.0",
   "status": "PASS"
 }

@@ -1,0 +1,41 @@
+
+### agents.reader.agent
+Any(*args, **kwargs)
+LLMClient()
+ReaderAgent(llm: 'LLMClient', inspector: 'WorkspaceInspector | None' = None) -> 'None'
+WorkspaceInspector()
+format_workspace_for_agent(files: 'list[WorkspaceFile]') -> 'str'
+
+### agents.reader.gemini_reader
+Any(*args, **kwargs)
+GeminiReaderAgent(llm: 'LLMClient', inspector: 'WorkspaceInspector | None' = None, trajectory_recorder: 'Any | None' = None) -> 'None'
+LLMClient()
+WorkspaceInspector()
+format_workspace_for_agent(files: 'list[WorkspaceFile]') -> 'str'
+
+### agents.analyzer.agent
+AnalyzerAgent(llm: 'LLMClient') -> 'None'
+Any(*args, **kwargs)
+BaseAgent(llm: 'LLMClient') -> 'None'
+
+### agents.optimizer.agent
+Any(*args, **kwargs)
+BaseAgent(llm: 'LLMClient') -> 'None'
+OptimizerAgent(llm: 'LLMClient') -> 'None'
+
+### agents.verifier.agent
+Any(*args, **kwargs)
+DeterministicVerifier()
+TrajectoryRecorder(path: 'str | Path') -> 'None'
+VerifierAgent(verifier: 'DeterministicVerifier | None' = None, recorder: 'TrajectoryRecorder | None' = None) -> 'None'
+
+### agents.orchestrator.graph
+AgentState(signature unavailable)
+Any(*args, **kwargs)
+Callable()
+StateGraph(state_schema: 'type[StateT]', context_schema: 'type[ContextT] | None' = None, *, input_schema: 'type[InputT] | None' = None, output_schema: 'type[OutputT] | None' = None, **kwargs: 'Unpack[DeprecatedKwargs]') -> 'None'
+build_graph(*, reader: 'AgentCallable', analyzer: 'AgentCallable', optimizer: 'AgentCallable', verifier: 'AgentCallable', start_from: 'str' = 'reader')
+route_after_verification(state: 'AgentState') -> 'str'
+
+### orchestration.graph
+build_graph(*, reader: 'AgentCallable', analyzer: 'AgentCallable', optimizer: 'AgentCallable', verifier: 'AgentCallable', start_from: 'str' = 'reader')

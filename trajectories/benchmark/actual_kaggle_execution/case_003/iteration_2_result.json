@@ -1,0 +1,24 @@
+{
+  "case_id": "case_003",
+  "iteration": 2,
+  "model": "gemini-3.6-flash",
+  "previous_candidate_sha256": "24981c9496462929e207678564999a9632c7095c2566a1aa818294a0346cbb62",
+  "candidate_sha256": "79ed24289d195493b56de12b5336b309ada21f1f0b5c29de289c6d53815b7018",
+  "candidate_path": "/kaggle/working/micro1-frontier-engineering/trajectories/benchmark/actual_kaggle_execution/case_003/candidate_iteration_2.cu",
+  "contract": {
+    "nonempty": true,
+    "run_stream_dependency": true,
+    "producer_stream": true,
+    "consumer_stream": true,
+    "cudaMemcpyAsync": true,
+    "cudaEventCreateWithFlags": true,
+    "cudaEventRecord": true,
+    "cudaStreamWaitEvent": true,
+    "cudaStreamSynchronize": true,
+    "cudaStreamDestroy": true,
+    "cudaFree": true,
+    "no_cpu_sleep": true
+  },
+  "contract_status": "PASS",
+  "cuda_execution": false
+}

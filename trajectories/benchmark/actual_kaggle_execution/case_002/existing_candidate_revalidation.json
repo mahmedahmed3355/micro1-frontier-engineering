@@ -1,0 +1,26 @@
+{
+  "case_id": "case_002",
+  "candidate": {
+    "path": "/kaggle/working/micro1-frontier-engineering/trajectories/benchmark/gemini_pilot/case_002/candidate.cu",
+    "sha256": "133991ddc0400447c9601e6ad939626a6ae42e34d4d45e83ce717a6c32516828",
+    "bytes": 961
+  },
+  "contract": {
+    "run_transfer": true,
+    "cudaMalloc": true,
+    "cudaMemcpy": true,
+    "cudaFree": true,
+    "cudaMemcpyAsync": false,
+    "cudaMemcpyDeviceToHost": true
+  },
+  "explicit_synchronization": false,
+  "synchronous_d2h_copy": true,
+  "compile": {
+    "status": "PASS",
+    "return_code": 0,
+    "stderr": ""
+  },
+  "historical_execution": {
+    "status": "PASS"
+  }
+}

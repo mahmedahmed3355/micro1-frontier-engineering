@@ -28,7 +28,8 @@ class WorkspaceInspector:
         ".json",
         ".md",
         ".txt",
-    }
+        ".py",
+}
 
     def inspect(
         self,

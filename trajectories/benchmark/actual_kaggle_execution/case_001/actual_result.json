@@ -1,0 +1,29 @@
+{
+  "case_id": "case_001",
+  "status": "PASS",
+  "candidate_source": "/kaggle/working/micro1-frontier-engineering/trajectories/benchmark/actual_kaggle_execution/case_001/candidate.cu",
+  "candidate_sha256": "133ba0f458c6dd62e20bc4581b5b402a63aacafdc342c7205b1fd3f0711a2d64",
+  "candidate_origin": "/kaggle/working/micro1-frontier-engineering/trajectories/benchmark/actual_kaggle_execution/case_001/candidate_iteration_2.cu",
+  "gemini_called": false,
+  "cuda_executed": true,
+  "sizes": [
+    1,
+    2,
+    31,
+    127,
+    255,
+    256,
+    257,
+    511,
+    512,
+    513,
+    1023,
+    1024,
+    1025,
+    4095,
+    4097
+  ],
+  "passed": 15,
+  "failed": 0,
+  "error": null
+}

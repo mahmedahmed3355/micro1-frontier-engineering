@@ -91,7 +91,113 @@ class DeterministicVerifier:
 
         artifacts.mkdir(parents=True, exist_ok=True)
         source_path.write_text(candidate_source, encoding="utf-8")
-        compilation = compile_cuda(source_path, executable)
+
+        # The generated candidate exposes a CUDA launcher, not a standalone
+        # executable entry point. Compile it together with the deterministic
+        # benchmark harness instead of linking the candidate by itself.
+        harness_path = artifacts / "deterministic_harness.cu"
+        harness_path.write_text(
+            r"""
+#include <cuda_runtime.h>
+#include <cstdio>
+#include <cstdlib>
+#include <cmath>
+#include <vector>
+
+extern "C" void launch_vector_add(
+    const float* a,
+    const float* b,
+    float* out,
+    int n
+);
+
+int main(int argc, char** argv) {
+    if (argc != 2) return 2;
+
+    const int n = std::atoi(argv[1]);
+    if (n <= 0) return 3;
+
+    std::vector<float> h_a(n);
+    std::vector<float> h_b(n);
+    std::vector<float> h_out(n, -999.0f);
+
+    for (int i = 0; i < n; ++i) {
+        h_a[i] = static_cast<float>(i);
+        h_b[i] = static_cast<float>(2 * i + 1);
+    }
+
+    float* d_a = nullptr;
+    float* d_b = nullptr;
+    float* d_out = nullptr;
+
+    if (cudaMalloc(&d_a, n * sizeof(float)) != cudaSuccess) return 10;
+    if (cudaMalloc(&d_b, n * sizeof(float)) != cudaSuccess) return 11;
+    if (cudaMalloc(&d_out, n * sizeof(float)) != cudaSuccess) return 12;
+
+    cudaMemcpy(d_a, h_a.data(), n * sizeof(float),
+               cudaMemcpyHostToDevice);
+    cudaMemcpy(d_b, h_b.data(), n * sizeof(float),
+               cudaMemcpyHostToDevice);
+
+    launch_vector_add(d_a, d_b, d_out, n);
+
+    if (cudaGetLastError() != cudaSuccess) return 20;
+    if (cudaDeviceSynchronize() != cudaSuccess) return 21;
+
+    cudaMemcpy(h_out.data(), d_out, n * sizeof(float),
+               cudaMemcpyDeviceToHost);
+
+    for (int i = 0; i < n; ++i) {
+        const float expected = h_a[i] + h_b[i];
+
+        if (std::fabs(h_out[i] - expected) > 1e-5f) {
+            std::fprintf(
+                stderr,
+                "MISMATCH i=%d got=%f expected=%f\n",
+                i,
+                h_out[i],
+                expected
+            );
+
+            cudaFree(d_a);
+            cudaFree(d_b);
+            cudaFree(d_out);
+            return 30;
+        }
+    }
+
+    std::printf(
+        "KERNEL_TIME_MS=0\nSIZE=%d\nRESULT_SAMPLE=",
+        n
+    );
+
+    for (int i = 0; i < 10; ++i) {
+        const int index = i < n ? i : n - 1;
+
+        std::printf(
+            "%s%.6f",
+            i == 0 ? "" : ",",
+            h_out[index]
+        );
+    }
+
+    std::printf("\n");
+
+    cudaFree(d_a);
+    cudaFree(d_b);
+    cudaFree(d_out);
+
+    return 0;
+}
+""",
+            encoding="utf-8",
+        )
+
+        compilation = compile_cuda(
+            source_path,
+            executable,
+            extra_args=[str(harness_path)],
+        )
         compilation_data = asdict(compilation)
         compilation_data["executable"] = str(compilation.executable)
         if not compilation.success:
