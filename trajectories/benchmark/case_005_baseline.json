@@ -1,0 +1,21 @@
+{
+  "case_id": "case_005",
+  "compile": {
+    "return_code": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  "correctness": "PASS",
+  "execution": {
+    "cuda": true,
+    "gemini": false,
+    "mode": "cuda_reference_compile"
+  },
+  "execution_class": "CUDA",
+  "gemini_api_call": false,
+  "implementation": "reference",
+  "reference": "cases/case_005/reference/lifetime.cu",
+  "runtime_seconds": 0.942765,
+  "schema_version": "1.0",
+  "status": "PASS"
+}

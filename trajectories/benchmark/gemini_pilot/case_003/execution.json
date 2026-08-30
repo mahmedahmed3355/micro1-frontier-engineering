@@ -1,0 +1,8 @@
+{
+  "case_id": "case_003",
+  "status": "FAIL",
+  "return_code": 10,
+  "candidate_sha256": "24981c9496462929e207678564999a9632c7095c2566a1aa818294a0346cbb62",
+  "stdout": "SIZE=1\nSIZE=1 REP=0 STATUS=FAIL RETURN_CODE=2\n",
+  "stderr": ""
+}

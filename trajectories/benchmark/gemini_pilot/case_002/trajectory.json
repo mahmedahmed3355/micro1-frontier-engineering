@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "case_id": "case_002",
+  "mode": "gemini_repair",
+  "model": "gemini-3.6-flash",
+  "baseline": {
+    "path": "/kaggle/working/gpu_engineering_agent_benchmark/trajectories/benchmark/case_002_baseline.json",
+    "sha256": "8a1ae3acf484101b979654fea8c6fa52160d0c0c64b1bc35f283f95c01458dcf"
+  },
+  "baseline_trajectory": {
+    "path": "/kaggle/working/gpu_engineering_agent_benchmark/trajectories/execution/case_002.json",
+    "sha256": "e8b223ef3b26a5be025cbbce38a30de467ba205e4e030e7a1c85c3549e7283bd"
+  },
+  "candidate_original": {
+    "path": "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_002/src/transfer.cu",
+    "sha256": "17decee288cfb2963c2aa7a35243a0950d2b546cd1d4fd7528aef3f9cf240a74"
+  },
+  "gemini": {
+    "calls": 1,
+    "purpose": "correctness_repair"
+  },
+  "candidate": {
+    "path": "/kaggle/working/gpu_engineering_agent_benchmark/trajectories/benchmark/gemini_pilot/case_002/candidate.cu",
+    "sha256": "133991ddc0400447c9601e6ad939626a6ae42e34d4d45e83ce717a6c32516828",
+    "bytes": 961,
+    "status": "generated"
+  },
+  "execution": {
+    "status": "PASS",
+    "return_code": 0,
+    "stdout": "SIZE=1\nPAGEABLE_RESULT=PASS\nPINNED_RESULT=PASS\nSIZE=1 STATUS=PASS\nSIZE=2\nPAGEABLE_RESULT=PASS\nPINNED_RESULT=PASS\nSIZE=2 STATUS=PASS\nSIZE=31\nPAGEABLE_RESULT=PASS\nPINNED_RESULT=PASS\nSIZE=31 STATUS=PASS\nSIZE=127\nPAGEABLE_RESULT=PASS\nPINNED_RESULT=PASS\nSIZE=127 STATUS=PASS\nSIZE=255\nPAGEABLE_RESULT=PASS\nPINNED_RESULT=PASS\nSIZE=255 STATUS=PASS\nSIZE=256\nPAGEABLE_RESULT=PASS\nPINNED_RESULT=PASS\nSIZE=256 STATUS=PASS\nSIZE=257\nPAGEABLE_RESULT=PASS\nPINNED_RESULT=PASS\nSIZE=257 STATUS=PASS\nSIZE=511\nPAGEABLE_RESULT=PASS\nPINNED_RESULT=PASS\nSIZE=511 STATUS=PASS\nSIZE=512\nPAGEABLE_RESULT=PASS\nPINNED_RESULT=PASS\nSIZE=512 STATUS=PASS\nSIZE=1023\nPAGEABLE_RESULT=PASS\nPINNED_RESULT=PASS\nSIZE=1023 STATUS=PASS\nSIZE=1024\nPAGEABLE_RESULT=PASS\nPINNED_RESULT=PASS\nSIZE=1024 STATUS=PASS\nSIZE=1025\nPAGEABLE_RESULT=PASS\nPINNED_RESULT=PASS\nSIZE=1025 STATUS=PASS\nSIZE=4095\nPAGEABLE_RESULT=PASS\nPINNED_RESULT=PASS\nSIZE=4095 STATUS=PASS\nSIZE=4096\nPAGEABLE_RESULT=PASS\nPINNED_RESULT=PASS\nSIZE=4096 STATUS=PASS\nSIZE=4097\nPAGEABLE_RESULT=PASS\nPINNED_RESULT=PASS\nSIZE=4097 STATUS=PASS\nOVERALL_STATUS=PASS\n",
+    "stderr": ""
+  },
+  "verifier": {
+    "status": "PASS"
+  }
+}

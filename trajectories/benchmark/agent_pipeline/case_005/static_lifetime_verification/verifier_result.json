@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "case_id": "case_005",
+  "verification": "static_control_flow_lifetime",
+  "status": "PASS",
+  "candidate": {
+    "path": "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_005/src/lifetime.cu",
+    "sha256": "b4bd3faddc567565c31bf0bfd782eefaef7e1146d6e87de7bdd36856835c0517",
+    "device_allocations": [
+      "device_input",
+      "device_output"
+    ],
+    "malloc_targets": [
+      "device_input",
+      "device_output"
+    ],
+    "free_targets": [
+      "device_input",
+      "device_output",
+      "device_input",
+      "device_output",
+      "device_input",
+      "device_input"
+    ],
+    "return_lines": [
+      16,
+      25,
+      37,
+      49,
+      55,
+      58
+    ],
+    "success_input_release": true,
+    "success_output_release": false,
+    "success_release_order": "missing_or_incorrect"
+  },
+  "reference": {
+    "path": "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_005/reference/lifetime.cu",
+    "sha256": "a4f93f39c288728866cb2dd7782d7c4504e150abd8a8f14f3e4dddf967630302",
+    "free_targets": [
+      "device_input",
+      "device_output",
+      "device_input",
+      "device_output",
+      "device_input",
+      "device_output",
+      "device_input"
+    ],
+    "return_lines": [
+      16,
+      25,
+      37,
+      49,
+      56,
+      59
+    ],
+    "success_output_release": true,
+    "success_input_release": true,
+    "success_release_order": "device_output_then_device_input"
+  },
+  "paths": {
+    "second_malloc_failure": true,
+    "h2d_failure": true,
+    "d2h_failure": true,
+    "success_input_release": true,
+    "success_output_release": false
+  },
+  "contract_checks": {
+    "source_exists": true,
+    "reference_exists": true,
+    "two_allocations": true,
+    "both_buffers": true,
+    "h2d_transfer": true,
+    "d2h_transfer": true,
+    "failure_cleanup": true,
+    "defective_success_cleanup": true,
+    "reference_success_cleanup": true
+  },
+  "execution": {
+    "cuda_execution": false,
+    "gemini_request": false,
+    "candidate_execution": false
+  },
+  "timestamp_utc": "2026-08-30T12:13:03.974875+00:00"
+}

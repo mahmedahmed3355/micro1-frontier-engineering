@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "case_id": "case_005",
+  "status": "PASS",
+  "verification": "static_control_flow_lifetime",
+  "candidate_defect": "output_device_allocation_leak_on_success_path",
+  "candidate_defect_confirmed": true,
+  "reference_contract": "PASS",
+  "cuda_execution": false,
+  "gemini_api_call": false,
+  "candidate_sha256": "b4bd3faddc567565c31bf0bfd782eefaef7e1146d6e87de7bdd36856835c0517",
+  "reference_sha256": "a4f93f39c288728866cb2dd7782d7c4504e150abd8a8f14f3e4dddf967630302",
+  "baseline_sha256": "309a0cf71210c4fc3900a94711095b59e150a60080d083660d6dc1ffa2a812d2",
+  "execution_trajectory_sha256": "0d1e77d7dbf85893159288cf7a935b948d78b782e5be096f0841a1795c0890de",
+  "verifier_artifact": "/kaggle/working/gpu_engineering_agent_benchmark/trajectories/benchmark/agent_pipeline/case_005/static_lifetime_verification/verifier_result.json"
+}

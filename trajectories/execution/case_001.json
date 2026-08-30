@@ -1,18 +1,211 @@
 {
   "baseline": {
-    "status": "PENDING_CUDA"
+    "correctness": "PASS",
+    "implementation": "reference",
+    "sizes_verified": [
+      1,
+      2,
+      31,
+      127,
+      255,
+      256,
+      512,
+      1024,
+      257,
+      513,
+      1025,
+      511,
+      1023,
+      4095,
+      4097
+    ],
+    "status": "PASS",
+    "workloads": [
+      {
+        "kernel_time_ms": 0.007136,
+        "result_first": "0.000000",
+        "result_last": "0.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.577981,
+        "size": 1,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.008192,
+        "result_first": "0.000000",
+        "result_last": "3.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.482033,
+        "size": 2,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.00784,
+        "result_first": "0.000000",
+        "result_last": "90.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.47361,
+        "size": 31,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.00784,
+        "result_first": "0.000000",
+        "result_last": "378.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.441811,
+        "size": 127,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.007392,
+        "result_first": "0.000000",
+        "result_last": "762.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.438487,
+        "size": 255,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.006912,
+        "result_first": "0.000000",
+        "result_last": "765.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.437387,
+        "size": 256,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.007072,
+        "result_first": "0.000000",
+        "result_last": "1533.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.446967,
+        "size": 512,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.006688,
+        "result_first": "0.000000",
+        "result_last": "3069.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.4542,
+        "size": 1024,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.007136,
+        "result_first": "0.000000",
+        "result_last": "768.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.446895,
+        "size": 257,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.008224,
+        "result_first": "0.000000",
+        "result_last": "1536.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.442914,
+        "size": 513,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.006944,
+        "result_first": "0.000000",
+        "result_last": "3072.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.448562,
+        "size": 1025,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.009632,
+        "result_first": "0.000000",
+        "result_last": "1530.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.442225,
+        "size": 511,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.008544,
+        "result_first": "0.000000",
+        "result_last": "3066.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.437244,
+        "size": 1023,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.00752,
+        "result_first": "0.000000",
+        "result_last": "12282.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.430617,
+        "size": 4095,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.00928,
+        "result_first": "0.000000",
+        "result_last": "12288.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.430762,
+        "size": 4097,
+        "status": "PASS"
+      }
+    ]
   },
   "candidate": {
-    "status": "PENDING_GEMINI"
+    "implementation": "gemini_flash_agent",
+    "status": "PENDING"
   },
   "case_id": "case_001",
-  "elapsed_seconds": 0.000477,
-  "metadata_loaded": true,
-  "mode": "dry_run",
+  "execution": {
+    "cuda": true,
+    "cuda_arch": "sm_75",
+    "gemini": false,
+    "gpu": "Tesla T4",
+    "gpu_count": 2
+  },
+  "mode": "reference_baseline",
+  "schema_version": "1.0",
+  "secrets": {
+    "api_keys_recorded": false,
+    "credentials_recorded": false
+  },
   "trajectory": {
-    "status": "READY"
+    "status": "READY_FOR_CANDIDATE",
+    "steps": [
+      {
+        "action": "compile",
+        "agent": "reference",
+        "status": "PASS",
+        "step": 1
+      },
+      {
+        "action": "cuda_execute",
+        "agent": "reference",
+        "status": "PASS",
+        "step": 2
+      },
+      {
+        "action": "boundary_verification",
+        "agent": "reference",
+        "status": "PASS",
+        "step": 3
+      },
+      {
+        "action": "record_baseline",
+        "agent": "reference",
+        "status": "PASS",
+        "step": 4
+      }
+    ]
   },
   "verifier": {
-    "status": "PENDING_CUDA"
+    "status": "PENDING"
   }
 }

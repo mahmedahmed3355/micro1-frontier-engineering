@@ -1,0 +1,12 @@
+{
+  "candidate_defect": true,
+  "case_id": "case_010",
+  "case_scope": "case_010_only",
+  "driver_only_fix": true,
+  "gemini_api_call": false,
+  "reference_behavior": "PASS",
+  "runtime_verification": "PASS",
+  "static_contract": "PASS",
+  "status": "PASS",
+  "verification_backend": "gloo"
+}

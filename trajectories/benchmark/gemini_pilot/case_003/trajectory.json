@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "case_id": "case_003",
+  "mode": "gemini_repair",
+  "model": "gemini-3.6-flash",
+  "baseline": {
+    "path": "/kaggle/working/gpu_engineering_agent_benchmark/trajectories/benchmark/case_003_baseline.json",
+    "sha256": "6509fc546058651c143ba853f82357719d6a38a777b7b8918d836da925868631"
+  },
+  "baseline_trajectory": {
+    "path": "/kaggle/working/gpu_engineering_agent_benchmark/trajectories/execution/case_003.json",
+    "sha256": "c6048cabc822e5d4d5893a5c0f1f95a91029b93c9622e87172e4a8b1e298e199"
+  },
+  "candidate_original": {
+    "path": "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_003/src/stream_dependency.cu",
+    "sha256": "e69743a3f360de94e65108efea7616a64a1b94c208f4e059642eb190137c3b86"
+  },
+  "gemini": {
+    "calls": 1,
+    "purpose": "correctness_repair"
+  },
+  "candidate": {
+    "path": "/kaggle/working/gpu_engineering_agent_benchmark/trajectories/benchmark/gemini_pilot/case_003/candidate.cu",
+    "sha256": "24981c9496462929e207678564999a9632c7095c2566a1aa818294a0346cbb62",
+    "bytes": 4165,
+    "status": "generated"
+  },
+  "execution": {
+    "status": "FAIL",
+    "return_code": 10,
+    "stdout": "SIZE=1\nSIZE=1 REP=0 STATUS=FAIL RETURN_CODE=2\n",
+    "stderr": ""
+  },
+  "verifier": {
+    "status": "FAIL"
+  }
+}

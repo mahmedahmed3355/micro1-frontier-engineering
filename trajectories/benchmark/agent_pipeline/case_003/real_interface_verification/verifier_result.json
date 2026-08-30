@@ -1,0 +1,38 @@
+{
+  "case_id": "case_003",
+  "mode": "gemini_candidate_real_interface",
+  "candidate": {
+    "path": "/kaggle/working/gpu_engineering_agent_benchmark/trajectories/benchmark/gemini_pilot/case_003/candidate.cu",
+    "sha256": "24981c9496462929e207678564999a9632c7095c2566a1aa818294a0346cbb62"
+  },
+  "interface": {
+    "function": "run_stream_dependency",
+    "contract": "const float*, float*, float, int"
+  },
+  "verification": {
+    "sizes": [
+      1,
+      2,
+      31,
+      127,
+      255,
+      256,
+      257,
+      511,
+      512,
+      513,
+      1023,
+      1024,
+      1025,
+      4095,
+      4096,
+      4097
+    ],
+    "repetitions": 10,
+    "expected_runs": 160,
+    "pass_runs": 160,
+    "fail_runs": 0,
+    "return_code": 0,
+    "status": "PASS"
+  }
+}

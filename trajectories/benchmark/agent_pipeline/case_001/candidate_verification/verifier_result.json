@@ -1,0 +1,192 @@
+{
+  "case_id": "case_001",
+  "mode": "gemini_candidate_verification",
+  "candidate_source_sha256": "8c13e4190418a5638a94f28a1e9cbec3e2b12592a2287e1cc4e04f706a729981",
+  "candidate_bytes": 4017,
+  "reference_source_sha256": "1467ed401af7b164c6615610ad240aed7b1928668a2c393cb00736f584f3730b",
+  "sizes": [
+    1,
+    2,
+    31,
+    127,
+    255,
+    256,
+    512,
+    1024,
+    257,
+    513,
+    1025,
+    511,
+    1023,
+    4095,
+    4096,
+    4097
+  ],
+  "cases_tested": 16,
+  "passed": 16,
+  "failed": 0,
+  "overall_status": "PASS",
+  "gemini_new_request": false,
+  "results": [
+    {
+      "size": 1,
+      "status": "PASS",
+      "reference_returncode": 0,
+      "candidate_returncode": 0,
+      "reference_stdout": "SIZE=1\nCHECKED=1\nFAILURES=0\n",
+      "reference_stderr": "",
+      "candidate_stdout": "SIZE=1\nCHECKED=1\nFAILURES=0\n",
+      "candidate_stderr": ""
+    },
+    {
+      "size": 2,
+      "status": "PASS",
+      "reference_returncode": 0,
+      "candidate_returncode": 0,
+      "reference_stdout": "SIZE=2\nCHECKED=2\nFAILURES=0\n",
+      "reference_stderr": "",
+      "candidate_stdout": "SIZE=2\nCHECKED=2\nFAILURES=0\n",
+      "candidate_stderr": ""
+    },
+    {
+      "size": 31,
+      "status": "PASS",
+      "reference_returncode": 0,
+      "candidate_returncode": 0,
+      "reference_stdout": "SIZE=31\nCHECKED=31\nFAILURES=0\n",
+      "reference_stderr": "",
+      "candidate_stdout": "SIZE=31\nCHECKED=31\nFAILURES=0\n",
+      "candidate_stderr": ""
+    },
+    {
+      "size": 127,
+      "status": "PASS",
+      "reference_returncode": 0,
+      "candidate_returncode": 0,
+      "reference_stdout": "SIZE=127\nCHECKED=127\nFAILURES=0\n",
+      "reference_stderr": "",
+      "candidate_stdout": "SIZE=127\nCHECKED=127\nFAILURES=0\n",
+      "candidate_stderr": ""
+    },
+    {
+      "size": 255,
+      "status": "PASS",
+      "reference_returncode": 0,
+      "candidate_returncode": 0,
+      "reference_stdout": "SIZE=255\nCHECKED=255\nFAILURES=0\n",
+      "reference_stderr": "",
+      "candidate_stdout": "SIZE=255\nCHECKED=255\nFAILURES=0\n",
+      "candidate_stderr": ""
+    },
+    {
+      "size": 256,
+      "status": "PASS",
+      "reference_returncode": 0,
+      "candidate_returncode": 0,
+      "reference_stdout": "SIZE=256\nCHECKED=256\nFAILURES=0\n",
+      "reference_stderr": "",
+      "candidate_stdout": "SIZE=256\nCHECKED=256\nFAILURES=0\n",
+      "candidate_stderr": ""
+    },
+    {
+      "size": 512,
+      "status": "PASS",
+      "reference_returncode": 0,
+      "candidate_returncode": 0,
+      "reference_stdout": "SIZE=512\nCHECKED=512\nFAILURES=0\n",
+      "reference_stderr": "",
+      "candidate_stdout": "SIZE=512\nCHECKED=512\nFAILURES=0\n",
+      "candidate_stderr": ""
+    },
+    {
+      "size": 1024,
+      "status": "PASS",
+      "reference_returncode": 0,
+      "candidate_returncode": 0,
+      "reference_stdout": "SIZE=1024\nCHECKED=1024\nFAILURES=0\n",
+      "reference_stderr": "",
+      "candidate_stdout": "SIZE=1024\nCHECKED=1024\nFAILURES=0\n",
+      "candidate_stderr": ""
+    },
+    {
+      "size": 257,
+      "status": "PASS",
+      "reference_returncode": 0,
+      "candidate_returncode": 0,
+      "reference_stdout": "SIZE=257\nCHECKED=257\nFAILURES=0\n",
+      "reference_stderr": "",
+      "candidate_stdout": "SIZE=257\nCHECKED=257\nFAILURES=0\n",
+      "candidate_stderr": ""
+    },
+    {
+      "size": 513,
+      "status": "PASS",
+      "reference_returncode": 0,
+      "candidate_returncode": 0,
+      "reference_stdout": "SIZE=513\nCHECKED=513\nFAILURES=0\n",
+      "reference_stderr": "",
+      "candidate_stdout": "SIZE=513\nCHECKED=513\nFAILURES=0\n",
+      "candidate_stderr": ""
+    },
+    {
+      "size": 1025,
+      "status": "PASS",
+      "reference_returncode": 0,
+      "candidate_returncode": 0,
+      "reference_stdout": "SIZE=1025\nCHECKED=1025\nFAILURES=0\n",
+      "reference_stderr": "",
+      "candidate_stdout": "SIZE=1025\nCHECKED=1025\nFAILURES=0\n",
+      "candidate_stderr": ""
+    },
+    {
+      "size": 511,
+      "status": "PASS",
+      "reference_returncode": 0,
+      "candidate_returncode": 0,
+      "reference_stdout": "SIZE=511\nCHECKED=511\nFAILURES=0\n",
+      "reference_stderr": "",
+      "candidate_stdout": "SIZE=511\nCHECKED=511\nFAILURES=0\n",
+      "candidate_stderr": ""
+    },
+    {
+      "size": 1023,
+      "status": "PASS",
+      "reference_returncode": 0,
+      "candidate_returncode": 0,
+      "reference_stdout": "SIZE=1023\nCHECKED=1023\nFAILURES=0\n",
+      "reference_stderr": "",
+      "candidate_stdout": "SIZE=1023\nCHECKED=1023\nFAILURES=0\n",
+      "candidate_stderr": ""
+    },
+    {
+      "size": 4095,
+      "status": "PASS",
+      "reference_returncode": 0,
+      "candidate_returncode": 0,
+      "reference_stdout": "SIZE=4095\nCHECKED=4095\nFAILURES=0\n",
+      "reference_stderr": "",
+      "candidate_stdout": "SIZE=4095\nCHECKED=4095\nFAILURES=0\n",
+      "candidate_stderr": ""
+    },
+    {
+      "size": 4096,
+      "status": "PASS",
+      "reference_returncode": 0,
+      "candidate_returncode": 0,
+      "reference_stdout": "SIZE=4096\nCHECKED=4096\nFAILURES=0\n",
+      "reference_stderr": "",
+      "candidate_stdout": "SIZE=4096\nCHECKED=4096\nFAILURES=0\n",
+      "candidate_stderr": ""
+    },
+    {
+      "size": 4097,
+      "status": "PASS",
+      "reference_returncode": 0,
+      "candidate_returncode": 0,
+      "reference_stdout": "SIZE=4097\nCHECKED=4097\nFAILURES=0\n",
+      "reference_stderr": "",
+      "candidate_stdout": "SIZE=4097\nCHECKED=4097\nFAILURES=0\n",
+      "candidate_stderr": ""
+    }
+  ]
+}

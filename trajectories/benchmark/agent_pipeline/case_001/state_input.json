@@ -1,0 +1,226 @@
+{
+  "baseline_evidence": {
+    "case_id": "case_001",
+    "compile": {
+      "returncode": 0,
+      "runtime_seconds": 2.401547,
+      "status": "PASS"
+    },
+    "correctness": "PASS",
+    "execution": {
+      "cuda": true,
+      "cuda_arch": "sm_75",
+      "gemini": false,
+      "gpu": "Tesla T4",
+      "gpu_count": 2
+    },
+    "implementation": "reference",
+    "schema_version": "1.0",
+    "sizes_verified": [
+      1,
+      2,
+      31,
+      127,
+      255,
+      256,
+      512,
+      1024,
+      257,
+      513,
+      1025,
+      511,
+      1023,
+      4095,
+      4097
+    ],
+    "source": {
+      "modified": false,
+      "path": "cases/case_001/reference/kernel.cu"
+    },
+    "status": "PASS",
+    "workloads": [
+      {
+        "kernel_time_ms": 0.007136,
+        "result_first": "0.000000",
+        "result_last": "0.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.577981,
+        "size": 1,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.008192,
+        "result_first": "0.000000",
+        "result_last": "3.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.482033,
+        "size": 2,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.00784,
+        "result_first": "0.000000",
+        "result_last": "90.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.47361,
+        "size": 31,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.00784,
+        "result_first": "0.000000",
+        "result_last": "378.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.441811,
+        "size": 127,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.007392,
+        "result_first": "0.000000",
+        "result_last": "762.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.438487,
+        "size": 255,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.006912,
+        "result_first": "0.000000",
+        "result_last": "765.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.437387,
+        "size": 256,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.007072,
+        "result_first": "0.000000",
+        "result_last": "1533.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.446967,
+        "size": 512,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.006688,
+        "result_first": "0.000000",
+        "result_last": "3069.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.4542,
+        "size": 1024,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.007136,
+        "result_first": "0.000000",
+        "result_last": "768.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.446895,
+        "size": 257,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.008224,
+        "result_first": "0.000000",
+        "result_last": "1536.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.442914,
+        "size": 513,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.006944,
+        "result_first": "0.000000",
+        "result_last": "3072.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.448562,
+        "size": 1025,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.009632,
+        "result_first": "0.000000",
+        "result_last": "1530.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.442225,
+        "size": 511,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.008544,
+        "result_first": "0.000000",
+        "result_last": "3066.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.437244,
+        "size": 1023,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.00752,
+        "result_first": "0.000000",
+        "result_last": "12282.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.430617,
+        "size": 4095,
+        "status": "PASS"
+      },
+      {
+        "kernel_time_ms": 0.00928,
+        "result_first": "0.000000",
+        "result_last": "12288.000000",
+        "returncode": 0,
+        "runtime_seconds": 0.430762,
+        "size": 4097,
+        "status": "PASS"
+      }
+    ]
+  },
+  "case_dir": "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_001",
+  "case_id": "case_001",
+  "feedback": [],
+  "feedback_history": [],
+  "input_files": [
+    "README.md",
+    "metadata.json",
+    "src/kernel.cu",
+    "reference/kernel.cu",
+    "tests/expected_behavior.json",
+    "tests/input_matrix.json",
+    "tests/verification_matrix.json",
+    "tests/harness_contract.md"
+  ],
+  "input_source": "#include <cuda_runtime.h>\n\n__global__ void vector_add_kernel(\n    const float* a,\n    const float* b,\n    float* out,\n    int n\n) {\n    const int idx = blockIdx.x * blockDim.x + threadIdx.x;\n\n    // BUG:\n    // The kernel assumes the launch grid contains exactly enough\n    // threads for the input. Non-multiple-of-block-size workloads\n    // can access memory beyond the logical array boundary.\n    out[idx] = a[idx] + b[idx];\n}\n\nextern \"C\" void launch_vector_add(\n    const float* a,\n    const float* b,\n    float* out,\n    int n\n) {\n    constexpr int block_size = 256;\n    const int grid_size = (n + block_size - 1) / block_size;\n\n    vector_add_kernel<<<grid_size, block_size>>>(a, b, out, n);\n}\n",
+  "iteration": 0,
+  "max_iterations": 3,
+  "metadata": {
+    "bug_class": "indexing / boundary conditions",
+    "case_id": "case_001",
+    "cuda_execution": false,
+    "deterministic_verification_required": true,
+    "domain": "CUDA Kernel",
+    "execution_status": "not-executed",
+    "expected_behavior": "every valid element is processed exactly once",
+    "gemini_api_required": true,
+    "gemini_evaluation": false,
+    "name": "CUDA Kernel Indexing Boundary Bug",
+    "primary_failure": "invalid thread indexing or missing bounds guard",
+    "required_runtime": [
+      "cuda"
+    ],
+    "status": "harness-prepared",
+    "trajectory": "trajectory/case_001.jsonl",
+    "trajectory_recording": "prepared",
+    "verification": {
+      "expected_behavior": "tests/expected_behavior.json",
+      "harness_contract": "tests/harness_contract.md",
+      "input_matrix": "tests/input_matrix.json",
+      "verification_matrix": "tests/verification_matrix.json"
+    },
+    "verification_strategy": "boundary sizes including non-multiples of block size"
+  },
+  "optimization_history": [],
+  "rejected_candidate_hashes": [],
+  "status": "running",
+  "workspace": "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_001"
+}

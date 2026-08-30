@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "case_id": "case_004",
+  "status": "PASS",
+  "mode": "gemini_candidate_real_contract_verification",
+  "verification": {
+    "sizes": [
+      1,
+      2,
+      31,
+      127,
+      255,
+      256,
+      257,
+      511,
+      512,
+      513,
+      1023,
+      1024,
+      1025,
+      2047,
+      2048,
+      4095,
+      4096,
+      4097,
+      8191,
+      8192,
+      8193
+    ],
+    "repetitions_per_size": 10,
+    "total": 210,
+    "passed": 210,
+    "failed": 0,
+    "return_code": 0,
+    "status": "PASS"
+  },
+  "contract": {
+    "original_barriers": 0,
+    "candidate_barriers": 2,
+    "reference_barriers": 2,
+    "defective_implementation_contract": "PASS",
+    "repaired_implementation_contract": "PASS"
+  },
+  "execution": {
+    "candidate_compile": "PASS",
+    "harness_compile": "PASS",
+    "link": "PASS",
+    "cuda_execution": "PASS",
+    "execution_return_code": 0
+  },
+  "safety": {
+    "gemini_new_request": false,
+    "candidate_source_modified": false,
+    "original_modified": false,
+    "reference_modified": false,
+    "baseline_modified": false,
+    "previous_cases_modified": false,
+    "secret_value_printed": false
+  }
+}

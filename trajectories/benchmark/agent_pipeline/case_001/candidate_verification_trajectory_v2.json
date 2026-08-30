@@ -1,0 +1,57 @@
+{
+  "candidate": {
+    "implementation": "gemini_flash_agent",
+    "source_bytes": 4017,
+    "status": "FAIL"
+  },
+  "case_id": "case_001",
+  "execution": {
+    "candidate_execution": true,
+    "cuda": true,
+    "gemini": false,
+    "reference_execution": true
+  },
+  "mode": "cuda_full_verification",
+  "schema_version": "1.0",
+  "secrets": {
+    "api_keys_recorded": false,
+    "credentials_recorded": false
+  },
+  "trajectory": {
+    "status": "RECORDED",
+    "steps": [
+      {
+        "action": "load_saved_reader",
+        "status": "PASS",
+        "step": 1
+      },
+      {
+        "action": "analyzer_reused",
+        "status": "PASS",
+        "step": 2
+      },
+      {
+        "action": "optimizer_reused",
+        "status": "PASS",
+        "step": 3
+      },
+      {
+        "action": "compile_candidate_standalone",
+        "status": "PASS",
+        "step": 4
+      },
+      {
+        "action": "cuda_full_verification",
+        "status": "FAIL",
+        "step": 5
+      }
+    ]
+  },
+  "verifier": {
+    "artifact": "trajectories/benchmark/agent_pipeline/case_001/full_verification_v2/verifier_result.json",
+    "cases_tested": 15,
+    "failed": 15,
+    "passed": 0,
+    "status": "FAIL"
+  }
+}

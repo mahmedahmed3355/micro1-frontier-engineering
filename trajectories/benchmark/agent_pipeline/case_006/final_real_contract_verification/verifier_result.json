@@ -1,0 +1,46 @@
+{
+  "baseline": {
+    "path": "/kaggle/working/gpu_engineering_agent_benchmark/trajectories/benchmark/case_006_baseline.json",
+    "sha256": "806676856b6051f6daa9fda28647aa85876b7d54b10b6ff002061ba136ecbd80"
+  },
+  "baseline_modification": false,
+  "candidate": {
+    "path": "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_006/src/device_mismatch.py",
+    "sha256": "396f5e9d9f58c40f2639ce9691f98d9d7348752bdde8342b287107db1409da98"
+  },
+  "candidate_bug": {
+    "class": "CPU/GPU device mismatch",
+    "confirmed": true,
+    "defect": "candidate moves values to execution device but does not normalize weight to that device"
+  },
+  "case_id": "case_006",
+  "contract": {
+    "path": "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_006/tests/test_contract.py",
+    "sha256": "85777ef28fd45138282542e7a2904a7687cb2b116ba174df175f5e7aa68b6386"
+  },
+  "execution_trajectory": {
+    "path": "/kaggle/working/gpu_engineering_agent_benchmark/trajectories/execution/case_006.json",
+    "sha256": "9b730c766a624e0436344938918bb6339a3d9b03ad0d88f3514badd0ef87f45f"
+  },
+  "execution_trajectory_modification": false,
+  "gemini": {
+    "called": false,
+    "required": false
+  },
+  "previous_case_modification": false,
+  "reference": {
+    "path": "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_006/reference/device_mismatch.py",
+    "sha256": "dcda731c175f27d96fc43f225ad435a93df7af73b8737015ceb8ab68aa2a4eeb"
+  },
+  "reference_modification": false,
+  "schema_version": "1.0",
+  "source_modification": false,
+  "status": "PASS",
+  "verification": {
+    "cuda_available": true,
+    "return_code": 0,
+    "runtime": true,
+    "runtime_seconds": 2.8520647709992772,
+    "stdout": "CUDA_AVAILABLE=True\nRESULTS_BEGIN\nCPU_INPUT_CANDIDATE_DEFECT STATUS=PASS DETAIL=expected device mismatch: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!\nCPU_INPUT_REFERENCE STATUS=PASS DETAIL=result_device=cuda:0\nCUDA_CPU_CANDIDATE_MIXED_DEVICE STATUS=PASS DETAIL=expected device mismatch: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!\nCUDA_CPU_REFERENCE_NORMALIZATION STATUS=PASS DETAIL=result_device=cuda:0\nCUDA_CUDA_CANDIDATE STATUS=PASS DETAIL=result_device=cuda:0\nCUDA_CUDA_REFERENCE STATUS=PASS DETAIL=result_device=cuda:0\nRESULTS_END\nTOTAL=6\nPASSED=6\nFAILED=0\nOVERALL_STATUS=PASS\n"
+  }
+}

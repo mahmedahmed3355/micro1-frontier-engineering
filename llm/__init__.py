@@ -5,3 +5,4 @@ __all__ = [
     "OpenAICompatibleClient",
     "RecordingLLM",
 ]
+from .gemini import GeminiFlashClient

@@ -1,0 +1,43 @@
+{
+  "behavior": {
+    "candidate": "DEFECT_CONFIRMED",
+    "distributed_loss_normalization": "PASS",
+    "reference": "PASS"
+  },
+  "bug_class": "incorrect accumulation or communication boundary",
+  "candidate_bug": "CONFIRMED",
+  "case_id": "case_007",
+  "finalized_at": 1788092748.6733196,
+  "next_step": "CASE_008_DISCOVERY",
+  "protected_artifacts": {
+    "baseline": "00e4d141ddde9c7028864b8cff73931ab745345c380e61d1efffe4ed9ae386eb",
+    "candidate": "134ed8bc1293ccae94883467b38926ebce08c16ad303977289aa968e5f6d054f",
+    "contract": "789a59613e3aadccfcdf5ddf2643c1f8fafaf360100a691f170462ffe2a072ce",
+    "execution": "4a15b7f2406eb46d311c8855c18649c98798cc01d02188ec249b932d3a0634e3",
+    "reference": "8af45cb5ecb73cd7d1dd4807b80cafc1b8b0b3ae40ffdf3754947a82b6007ef8",
+    "verifier": "cfc78e090980c258cf8de069ab5dc46699e8cfcd25b4452e40eeb90509a3224a"
+  },
+  "safety": {
+    "baseline_modification": "NONE",
+    "candidate_modification": "NONE",
+    "contract_modification": "NONE",
+    "cuda_execution": false,
+    "execution_modification": "NONE",
+    "gemini_calls": 0,
+    "previous_case_modification": "NONE",
+    "reference_modification": "NONE",
+    "secret_value_printed": false
+  },
+  "status": "PASS",
+  "verification": {
+    "cuda_required": false,
+    "distributed_available": true,
+    "gemini_required": false,
+    "runtime_cases": 3,
+    "runtime_contract": "PASS",
+    "runtime_failed": 0,
+    "runtime_passed": 3,
+    "static_contract": "PASS",
+    "static_tests": 9
+  }
+}

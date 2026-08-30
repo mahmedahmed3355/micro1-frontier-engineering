@@ -1,0 +1,35 @@
+{
+  "baseline_modification": "NONE",
+  "candidate_bug": "CONFIRMED",
+  "candidate_defect": "host-side consumption occurs before explicit GPU completion synchronization",
+  "candidate_modification": "NONE",
+  "case_id": "case_009",
+  "contract_modification": "NONE",
+  "cuda_execution": "REAL_RUNTIME",
+  "execution_trajectory_modification": "NONE",
+  "gemini": "NOT_REQUIRED",
+  "gemini_calls": 0,
+  "previous_cases": "001-008",
+  "previous_cases_modification": "NONE",
+  "protected_hashes": {
+    "CASE_009_BASELINE": "cdb50a69b387789f0a85b95d172f751e43500f1d8d4778412e3bf7f44643705d",
+    "CASE_009_CANDIDATE": "d3f515ff666a276c7304ab99079a56912864dbd276c6733a011d55affecc8921",
+    "CASE_009_CONTRACT": "1fa5629535697672ea82f4838362e618471f4a6b47e3a3c86d4ebd0debf07a1c",
+    "CASE_009_EXECUTION": "1234860f3242ead198deb86d752625fbaf77f40d2edea57982b61cf8ce67e6d8",
+    "CASE_009_REFERENCE": "135c39b41aa502c8d9a2e32380b28fe9670f7bb7df60f7c06a925f37d539b771"
+  },
+  "reference_behavior": "PASS",
+  "reference_modification": "NONE",
+  "runtime_result": {
+    "cases_tested": 4,
+    "cuda_execution": "REAL_RUNTIME",
+    "failed": 0,
+    "overall_status": "PASS",
+    "passed": 4,
+    "return_code": 0
+  },
+  "runtime_verification": "PASS",
+  "schema_version": "1.0",
+  "static_contract": "PASS",
+  "status": "PASS"
+}

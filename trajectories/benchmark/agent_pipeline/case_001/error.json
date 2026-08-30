@@ -1,0 +1,12 @@
+{
+  "api_key_recorded": false,
+  "case_id": "case_001",
+  "error": {
+    "message": "'case_dir'",
+    "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 303, in <module>\n  File \"/kaggle/working/gpu_engineering_agent_benchmark/agents/verifier/agent.py\", line 29, in run\n    verification = self.verifier.verify(state)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/gpu_engineering_agent_benchmark/runtime/verifier.py\", line 71, in verify\n    case_dir = Path(state[\"case_dir\"])\n                    ~~~~~^^^^^^^^^^^^\nKeyError: 'case_dir'\n",
+    "type": "KeyError"
+  },
+  "schema_version": "1.0",
+  "secret_value_recorded": false,
+  "status": "FAIL"
+}

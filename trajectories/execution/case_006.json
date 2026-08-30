@@ -1,18 +1,26 @@
 {
   "baseline": {
-    "status": "PENDING_CUDA"
+    "correctness": "PASS",
+    "implementation": "reference",
+    "runtime_seconds": 1.41816,
+    "status": "PASS"
   },
   "candidate": {
-    "status": "PENDING_GEMINI"
+    "implementation": "gemini_flash_agent",
+    "status": "PENDING"
   },
   "case_id": "case_006",
-  "elapsed_seconds": 0.000487,
-  "metadata_loaded": true,
-  "mode": "dry_run",
+  "mode": "reference_baseline",
+  "schema_version": "1.0",
+  "secrets": {
+    "api_keys_recorded": false,
+    "credentials_recorded": false
+  },
   "trajectory": {
+    "execution_class": "PYTORCH",
     "status": "READY"
   },
   "verifier": {
-    "status": "PENDING_CUDA"
+    "status": "PENDING"
   }
 }

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "case_id": "case_004",
+  "mode": "gemini_repair",
+  "model": "gemini-3.6-flash",
+  "source": {
+    "original_candidate": "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_004/src/reduction.cu",
+    "reference": "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_004/reference/reduction.cu"
+  },
+  "candidate": {
+    "path": "/kaggle/working/gpu_engineering_agent_benchmark/trajectories/benchmark/gemini_pilot/case_004/candidate.cu",
+    "sha256": "676bfa76b913be2f8c8fab81f4edea32154bee4b307ec600860e441389d8269a",
+    "bytes": 2563,
+    "compile_status": "PASS"
+  },
+  "gemini": {
+    "request": "PASS",
+    "calls": 1,
+    "secret_value_printed": false
+  },
+  "verification": {
+    "execution": "NOT_RUN",
+    "cuda_execution": "NOT_RUN"
+  },
+  "trajectory": {
+    "stage": "gemini_repair",
+    "status": "PASS",
+    "events": [
+      {
+        "event": "gemini_request",
+        "status": "PASS"
+      },
+      {
+        "event": "candidate_generated",
+        "status": "PASS"
+      },
+      {
+        "event": "candidate_contract",
+        "status": "PASS"
+      },
+      {
+        "event": "candidate_object_compile",
+        "status": "PASS"
+      }
+    ]
+  },
+  "secrets": {
+    "secret_value_printed": false
+  }
+}

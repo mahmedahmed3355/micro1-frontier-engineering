@@ -1,0 +1,21 @@
+{
+  "case_id": "case_003",
+  "compile": {
+    "return_code": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  "correctness": "PASS",
+  "execution": {
+    "cuda": true,
+    "gemini": false,
+    "mode": "cuda_reference_compile"
+  },
+  "execution_class": "CUDA",
+  "gemini_api_call": false,
+  "implementation": "reference",
+  "reference": "cases/case_003/reference/stream_dependency.cu",
+  "runtime_seconds": 0.954765,
+  "schema_version": "1.0",
+  "status": "PASS"
+}

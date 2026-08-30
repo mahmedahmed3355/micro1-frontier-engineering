@@ -1,0 +1,227 @@
+{
+  "candidate": {
+    "has_main": true,
+    "implementation": "gemini_flash_agent",
+    "source_bytes": 4017,
+    "status": "FAIL"
+  },
+  "case_id": "case_001",
+  "execution": {
+    "candidate_execution": true,
+    "cuda": true,
+    "gemini": false,
+    "model_requests": 0,
+    "reference_execution": true
+  },
+  "mode": "cuda_full_verification",
+  "schema_version": "1.0",
+  "secrets": {
+    "api_keys_recorded": false,
+    "credentials_recorded": false
+  },
+  "status": "FAIL",
+  "verification": {
+    "cases_tested": 15,
+    "failed": 15,
+    "passed": 0,
+    "results": [
+      {
+        "candidate_output_length": 0,
+        "candidate_return_code": 0,
+        "first_mismatch_index": null,
+        "length_match": false,
+        "max_abs_error": null,
+        "numerical_match": false,
+        "reference_output_length": 1,
+        "reference_return_code": 0,
+        "size": 1,
+        "status": "FAIL"
+      },
+      {
+        "candidate_output_length": 0,
+        "candidate_return_code": 0,
+        "first_mismatch_index": null,
+        "length_match": false,
+        "max_abs_error": null,
+        "numerical_match": false,
+        "reference_output_length": 2,
+        "reference_return_code": 0,
+        "size": 2,
+        "status": "FAIL"
+      },
+      {
+        "candidate_output_length": 0,
+        "candidate_return_code": 0,
+        "first_mismatch_index": null,
+        "length_match": false,
+        "max_abs_error": null,
+        "numerical_match": false,
+        "reference_output_length": 31,
+        "reference_return_code": 0,
+        "size": 31,
+        "status": "FAIL"
+      },
+      {
+        "candidate_output_length": 0,
+        "candidate_return_code": 0,
+        "first_mismatch_index": null,
+        "length_match": false,
+        "max_abs_error": null,
+        "numerical_match": false,
+        "reference_output_length": 127,
+        "reference_return_code": 0,
+        "size": 127,
+        "status": "FAIL"
+      },
+      {
+        "candidate_output_length": 0,
+        "candidate_return_code": 0,
+        "first_mismatch_index": null,
+        "length_match": false,
+        "max_abs_error": null,
+        "numerical_match": false,
+        "reference_output_length": 255,
+        "reference_return_code": 0,
+        "size": 255,
+        "status": "FAIL"
+      },
+      {
+        "candidate_output_length": 0,
+        "candidate_return_code": 0,
+        "first_mismatch_index": null,
+        "length_match": false,
+        "max_abs_error": null,
+        "numerical_match": false,
+        "reference_output_length": 256,
+        "reference_return_code": 0,
+        "size": 256,
+        "status": "FAIL"
+      },
+      {
+        "candidate_output_length": 0,
+        "candidate_return_code": 0,
+        "first_mismatch_index": null,
+        "length_match": false,
+        "max_abs_error": null,
+        "numerical_match": false,
+        "reference_output_length": 512,
+        "reference_return_code": 0,
+        "size": 512,
+        "status": "FAIL"
+      },
+      {
+        "candidate_output_length": 0,
+        "candidate_return_code": 0,
+        "first_mismatch_index": null,
+        "length_match": false,
+        "max_abs_error": null,
+        "numerical_match": false,
+        "reference_output_length": 1024,
+        "reference_return_code": 0,
+        "size": 1024,
+        "status": "FAIL"
+      },
+      {
+        "candidate_output_length": 0,
+        "candidate_return_code": 0,
+        "first_mismatch_index": null,
+        "length_match": false,
+        "max_abs_error": null,
+        "numerical_match": false,
+        "reference_output_length": 257,
+        "reference_return_code": 0,
+        "size": 257,
+        "status": "FAIL"
+      },
+      {
+        "candidate_output_length": 0,
+        "candidate_return_code": 0,
+        "first_mismatch_index": null,
+        "length_match": false,
+        "max_abs_error": null,
+        "numerical_match": false,
+        "reference_output_length": 513,
+        "reference_return_code": 0,
+        "size": 513,
+        "status": "FAIL"
+      },
+      {
+        "candidate_output_length": 0,
+        "candidate_return_code": 0,
+        "first_mismatch_index": null,
+        "length_match": false,
+        "max_abs_error": null,
+        "numerical_match": false,
+        "reference_output_length": 1025,
+        "reference_return_code": 0,
+        "size": 1025,
+        "status": "FAIL"
+      },
+      {
+        "candidate_output_length": 0,
+        "candidate_return_code": 0,
+        "first_mismatch_index": null,
+        "length_match": false,
+        "max_abs_error": null,
+        "numerical_match": false,
+        "reference_output_length": 511,
+        "reference_return_code": 0,
+        "size": 511,
+        "status": "FAIL"
+      },
+      {
+        "candidate_output_length": 0,
+        "candidate_return_code": 0,
+        "first_mismatch_index": null,
+        "length_match": false,
+        "max_abs_error": null,
+        "numerical_match": false,
+        "reference_output_length": 1023,
+        "reference_return_code": 0,
+        "size": 1023,
+        "status": "FAIL"
+      },
+      {
+        "candidate_output_length": 0,
+        "candidate_return_code": 0,
+        "first_mismatch_index": null,
+        "length_match": false,
+        "max_abs_error": null,
+        "numerical_match": false,
+        "reference_output_length": 4095,
+        "reference_return_code": 0,
+        "size": 4095,
+        "status": "FAIL"
+      },
+      {
+        "candidate_output_length": 0,
+        "candidate_return_code": 0,
+        "first_mismatch_index": null,
+        "length_match": false,
+        "max_abs_error": null,
+        "numerical_match": false,
+        "reference_output_length": 4097,
+        "reference_return_code": 0,
+        "size": 4097,
+        "status": "FAIL"
+      }
+    ],
+    "sizes": [
+      1,
+      2,
+      31,
+      127,
+      255,
+      256,
+      512,
+      1024,
+      257,
+      513,
+      1025,
+      511,
+      1023,
+      4095,
+      4097
+    ]
+  }
+}

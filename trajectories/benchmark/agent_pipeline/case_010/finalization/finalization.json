@@ -1,0 +1,18 @@
+{
+  "baseline": "PROTECTED",
+  "candidate_bug": "CONFIRMED",
+  "candidate_bug_class": "distributed device configuration mismatch",
+  "candidate_source": "UNCHANGED",
+  "case_id": "case_010",
+  "case_scope": "case_010_only",
+  "contract": "UNCHANGED",
+  "cuda": "NOT_REQUIRED",
+  "execution_trajectory": "UNCHANGED",
+  "gemini": "NOT_REQUIRED",
+  "next_step": "case_011_discovery",
+  "reference_behavior": "PASS",
+  "reference_source": "UNCHANGED",
+  "runtime_verification": "PASS",
+  "static_contract": "PASS",
+  "status": "PASS"
+}

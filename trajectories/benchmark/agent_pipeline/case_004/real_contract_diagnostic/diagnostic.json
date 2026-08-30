@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "case_id": "case_004",
+  "purpose": "real_contract_diagnostic",
+  "gemini_candidate": {
+    "path": "/kaggle/working/gpu_engineering_agent_benchmark/trajectories/benchmark/gemini_pilot/case_004/candidate.cu",
+    "sha256": "676bfa76b913be2f8c8fab81f4edea32154bee4b307ec600860e441389d8269a",
+    "bytes": 2563
+  },
+  "reference": {
+    "path": "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_004/reference/reduction.cu",
+    "sha256": "676bfa76b913be2f8c8fab81f4edea32154bee4b307ec600860e441389d8269a",
+    "bytes": 2563
+  },
+  "interface": {
+    "expected_function": "run_reduction",
+    "gemini_signature": "extern \"C\" int run_reduction(\n    const float* host_input,\n    float* host_output,\n    int n\n) {\n    if (n <= 0) {\n        return static_cast<int>(cudaErrorInvalidValue);\n    }\n\n    const int block_size = 256;\n    const int block_count = (n + block_size - 1) / block_size;\n\n    const size_t input_bytes =\n        static_cast<size_t>(n) * sizeof(float);\n\n    const size_t output_bytes =\n        static_cast<size_t>(block_count) * sizeof(float);\n\n    float* device_input = nullptr;\n    float* device_output = nullptr;\n\n    cudaError_t status = cudaMalloc(\n        reinterpret_cast<void**>(&device_input),\n        input_bytes\n    );\n\n    if (status != cudaSuccess) {\n        return static_cast<int>(status);\n    }\n\n    status = cudaMalloc(\n        reinterpret_cast<void**>(&device_output),\n        output_bytes\n    );\n\n    if (status != cudaSuccess) {\n        cudaFree(device_input);\n        return static_cast<int>(status);\n    }\n\n    status = cudaMemcpy(\n        device_input,\n        host_input,\n        input_bytes,\n        cudaMemcpyHostToDevice\n    );\n\n    if (status != cudaSuccess) {\n        cudaFree(device_output);\n        cudaFree(device_input);\n        return static_cast<int>(status);\n    }\n\n    block_reduce<<<block_count, block_size>>>(\n        device_input,\n        device_output,\n        n\n    );\n\n    status = cudaGetLastError();\n\n    if (status == cudaSuccess) {\n        status = cudaDeviceSynchronize();\n    }\n\n    if (status == cudaSuccess) {\n        status = cudaMemcpy(\n            host_output,\n            device_output,\n            output_bytes,\n            cudaMemcpyDeviceToHost\n        );\n    }\n\n    cudaError_t output_free_status = cudaFree(device_output);\n    cudaError_t input_free_status = cudaFree(device_input);\n\n    if (status != cudaSuccess) {\n        return static_cast<int>(status);\n    }\n\n    if (output_free_status != cudaSuccess) {\n        return static_cast<int>(output_free_status);\n    }\n\n    return static_cast<int>(input_free_status);\n}",
+    "reference_signature": "extern \"C\" int run_reduction(\n    const float* host_input,\n    float* host_output,\n    int n\n) {\n    if (n <= 0) {\n        return static_cast<int>(cudaErrorInvalidValue);\n    }\n\n    const int block_size = 256;\n    const int block_count = (n + block_size - 1) / block_size;\n\n    const size_t input_bytes =\n        static_cast<size_t>(n) * sizeof(float);\n\n    const size_t output_bytes =\n        static_cast<size_t>(block_count) * sizeof(float);\n\n    float* device_input = nullptr;\n    float* device_output = nullptr;\n\n    cudaError_t status = cudaMalloc(\n        reinterpret_cast<void**>(&device_input),\n        input_bytes\n    );\n\n    if (status != cudaSuccess) {\n        return static_cast<int>(status);\n    }\n\n    status = cudaMalloc(\n        reinterpret_cast<void**>(&device_output),\n        output_bytes\n    );\n\n    if (status != cudaSuccess) {\n        cudaFree(device_input);\n        return static_cast<int>(status);\n    }\n\n    status = cudaMemcpy(\n        device_input,\n        host_input,\n        input_bytes,\n        cudaMemcpyHostToDevice\n    );\n\n    if (status != cudaSuccess) {\n        cudaFree(device_output);\n        cudaFree(device_input);\n        return static_cast<int>(status);\n    }\n\n    block_reduce<<<block_count, block_size>>>(\n        device_input,\n        device_output,\n        n\n    );\n\n    status = cudaGetLastError();\n\n    if (status == cudaSuccess) {\n        status = cudaDeviceSynchronize();\n    }\n\n    if (status == cudaSuccess) {\n        status = cudaMemcpy(\n            host_output,\n            device_output,\n            output_bytes,\n            cudaMemcpyDeviceToHost\n        );\n    }\n\n    cudaError_t output_free_status = cudaFree(device_output);\n    cudaError_t input_free_status = cudaFree(device_input);\n\n    if (status != cudaSuccess) {\n        return static_cast<int>(status);\n    }\n\n    if (output_free_status != cudaSuccess) {\n        return static_cast<int>(output_free_status);\n    }\n\n    return static_cast<int>(input_free_status);\n}"
+  },
+  "synchronization": {
+    "gemini_syncthreads": 2,
+    "reference_syncthreads": 2
+  },
+  "shared_memory": {
+    "gemini": [
+      "__shared__ float shared_values[256];"
+    ],
+    "reference": [
+      "__shared__ float shared_values[256];"
+    ]
+  },
+  "previous_verification": {
+    "status": "INVALID_HARNESS_RESULT",
+    "reason": "verification harness assumed scalar reduction output without first establishing the real Case 004 contract"
+  },
+  "safety": {
+    "new_gemini_request": false,
+    "candidate_modified": false,
+    "original_modified": false,
+    "reference_modified": false
+  }
+}

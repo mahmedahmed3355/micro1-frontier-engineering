@@ -1,0 +1,240 @@
+{
+  "benchmark": "gpu-engineering-agent-benchmark",
+  "cases": 9,
+  "execution": {
+    "batch": true,
+    "cuda": true,
+    "gemini": false
+  },
+  "failed": 0,
+  "mode": "reference_baseline_batch",
+  "passed": 9,
+  "results": [
+    {
+      "case_id": "case_002",
+      "compile": {
+        "return_code": 0,
+        "stderr": "",
+        "stdout": ""
+      },
+      "correctness": "PASS",
+      "execution": {
+        "cuda": true,
+        "gemini": false,
+        "mode": "cuda_reference_compile"
+      },
+      "execution_class": "CUDA",
+      "gemini_api_call": false,
+      "implementation": "reference",
+      "reference": "cases/case_002/reference/transfer.cu",
+      "runtime_seconds": 0.982072,
+      "status": "PASS"
+    },
+    {
+      "case_id": "case_003",
+      "compile": {
+        "return_code": 0,
+        "stderr": "",
+        "stdout": ""
+      },
+      "correctness": "PASS",
+      "execution": {
+        "cuda": true,
+        "gemini": false,
+        "mode": "cuda_reference_compile"
+      },
+      "execution_class": "CUDA",
+      "gemini_api_call": false,
+      "implementation": "reference",
+      "reference": "cases/case_003/reference/stream_dependency.cu",
+      "runtime_seconds": 0.954765,
+      "status": "PASS"
+    },
+    {
+      "case_id": "case_004",
+      "compile": {
+        "return_code": 0,
+        "stderr": "",
+        "stdout": ""
+      },
+      "correctness": "PASS",
+      "execution": {
+        "cuda": true,
+        "gemini": false,
+        "mode": "cuda_reference_compile"
+      },
+      "execution_class": "CUDA",
+      "gemini_api_call": false,
+      "implementation": "reference",
+      "reference": "cases/case_004/reference/reduction.cu",
+      "runtime_seconds": 0.96566,
+      "status": "PASS"
+    },
+    {
+      "case_id": "case_005",
+      "compile": {
+        "return_code": 0,
+        "stderr": "",
+        "stdout": ""
+      },
+      "correctness": "PASS",
+      "execution": {
+        "cuda": true,
+        "gemini": false,
+        "mode": "cuda_reference_compile"
+      },
+      "execution_class": "CUDA",
+      "gemini_api_call": false,
+      "implementation": "reference",
+      "reference": "cases/case_005/reference/lifetime.cu",
+      "runtime_seconds": 0.942765,
+      "status": "PASS"
+    },
+    {
+      "case_id": "case_006",
+      "checks": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "pytest",
+            "-q",
+            "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_006/tests/test_contract.py"
+          ],
+          "return_code": 0,
+          "runtime_seconds": 1.41816,
+          "stderr": "",
+          "stdout": "........                                                                 [100%]\n8 passed in 0.03s\n"
+        }
+      ],
+      "correctness": "PASS",
+      "execution": {
+        "cuda": false,
+        "gemini": false,
+        "mode": "static_contract"
+      },
+      "execution_class": "PYTORCH",
+      "gemini_api_call": false,
+      "implementation": "reference",
+      "runtime_seconds": 1.41816,
+      "status": "PASS"
+    },
+    {
+      "case_id": "case_007",
+      "checks": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "pytest",
+            "-q",
+            "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_007/tests/test_contract.py"
+          ],
+          "return_code": 0,
+          "runtime_seconds": 1.127783,
+          "stderr": "",
+          "stdout": ".........                                                                [100%]\n9 passed in 0.03s\n"
+        }
+      ],
+      "correctness": "PASS",
+      "execution": {
+        "cuda": false,
+        "gemini": false,
+        "mode": "static_contract"
+      },
+      "execution_class": "DISTRIBUTED_STATIC",
+      "gemini_api_call": false,
+      "implementation": "reference",
+      "runtime_seconds": 1.127783,
+      "status": "PASS"
+    },
+    {
+      "case_id": "case_008",
+      "checks": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "pytest",
+            "-q",
+            "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_008/tests/test_contract.py"
+          ],
+          "return_code": 0,
+          "runtime_seconds": 1.123731,
+          "stderr": "",
+          "stdout": "..........                                                               [100%]\n10 passed in 0.03s\n"
+        }
+      ],
+      "correctness": "PASS",
+      "execution": {
+        "cuda": false,
+        "gemini": false,
+        "mode": "static_contract"
+      },
+      "execution_class": "DISTRIBUTED_STATIC",
+      "gemini_api_call": false,
+      "implementation": "reference",
+      "runtime_seconds": 1.123731,
+      "status": "PASS"
+    },
+    {
+      "case_id": "case_009",
+      "checks": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "pytest",
+            "-q",
+            "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_009/tests/test_contract.py"
+          ],
+          "return_code": 0,
+          "runtime_seconds": 1.128883,
+          "stderr": "",
+          "stdout": "...........                                                              [100%]\n11 passed in 0.03s\n"
+        }
+      ],
+      "correctness": "PASS",
+      "execution": {
+        "cuda": false,
+        "gemini": false,
+        "mode": "static_contract"
+      },
+      "execution_class": "PYTORCH",
+      "gemini_api_call": false,
+      "implementation": "reference",
+      "runtime_seconds": 1.128883,
+      "status": "PASS"
+    },
+    {
+      "case_id": "case_010",
+      "checks": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "pytest",
+            "-q",
+            "/kaggle/working/gpu_engineering_agent_benchmark/cases/case_010/tests/test_contract.py"
+          ],
+          "return_code": 0,
+          "runtime_seconds": 1.15599,
+          "stderr": "",
+          "stdout": "...............                                                          [100%]\n15 passed in 0.03s\n"
+        }
+      ],
+      "correctness": "PASS",
+      "execution": {
+        "cuda": false,
+        "gemini": false,
+        "mode": "static_contract"
+      },
+      "execution_class": "DISTRIBUTED_STATIC",
+      "gemini_api_call": false,
+      "implementation": "reference",
+      "runtime_seconds": 1.15599,
+      "status": "PASS"
+    }
+  ],
+  "schema_version": "1.0"
+}
