@@ -1,0 +1,193 @@
+{
+  "benchmark": "gpu-engineering-agent-benchmark",
+  "cases": 10,
+  "execution": {
+    "batch": true,
+    "cuda": false,
+    "gemini": false
+  },
+  "mode": "dry-run",
+  "results": [
+    {
+      "baseline": {
+        "status": "PENDING_CUDA"
+      },
+      "candidate": {
+        "status": "PENDING_GEMINI"
+      },
+      "case_id": "case_001",
+      "elapsed_seconds": 0.000477,
+      "metadata_loaded": true,
+      "mode": "dry_run",
+      "trajectory": {
+        "status": "READY"
+      },
+      "verifier": {
+        "status": "PENDING_CUDA"
+      }
+    },
+    {
+      "baseline": {
+        "status": "PENDING_CUDA"
+      },
+      "candidate": {
+        "status": "PENDING_GEMINI"
+      },
+      "case_id": "case_002",
+      "elapsed_seconds": 0.000846,
+      "metadata_loaded": true,
+      "mode": "dry_run",
+      "trajectory": {
+        "status": "READY"
+      },
+      "verifier": {
+        "status": "PENDING_CUDA"
+      }
+    },
+    {
+      "baseline": {
+        "status": "PENDING_CUDA"
+      },
+      "candidate": {
+        "status": "PENDING_GEMINI"
+      },
+      "case_id": "case_003",
+      "elapsed_seconds": 0.000576,
+      "metadata_loaded": true,
+      "mode": "dry_run",
+      "trajectory": {
+        "status": "READY"
+      },
+      "verifier": {
+        "status": "PENDING_CUDA"
+      }
+    },
+    {
+      "baseline": {
+        "status": "PENDING_CUDA"
+      },
+      "candidate": {
+        "status": "PENDING_GEMINI"
+      },
+      "case_id": "case_004",
+      "elapsed_seconds": 0.000383,
+      "metadata_loaded": true,
+      "mode": "dry_run",
+      "trajectory": {
+        "status": "READY"
+      },
+      "verifier": {
+        "status": "PENDING_CUDA"
+      }
+    },
+    {
+      "baseline": {
+        "status": "PENDING_CUDA"
+      },
+      "candidate": {
+        "status": "PENDING_GEMINI"
+      },
+      "case_id": "case_005",
+      "elapsed_seconds": 0.00051,
+      "metadata_loaded": true,
+      "mode": "dry_run",
+      "trajectory": {
+        "status": "READY"
+      },
+      "verifier": {
+        "status": "PENDING_CUDA"
+      }
+    },
+    {
+      "baseline": {
+        "status": "PENDING_CUDA"
+      },
+      "candidate": {
+        "status": "PENDING_GEMINI"
+      },
+      "case_id": "case_006",
+      "elapsed_seconds": 0.000487,
+      "metadata_loaded": true,
+      "mode": "dry_run",
+      "trajectory": {
+        "status": "READY"
+      },
+      "verifier": {
+        "status": "PENDING_CUDA"
+      }
+    },
+    {
+      "baseline": {
+        "status": "PENDING_CUDA"
+      },
+      "candidate": {
+        "status": "PENDING_GEMINI"
+      },
+      "case_id": "case_007",
+      "elapsed_seconds": 0.000442,
+      "metadata_loaded": true,
+      "mode": "dry_run",
+      "trajectory": {
+        "status": "READY"
+      },
+      "verifier": {
+        "status": "PENDING_CUDA"
+      }
+    },
+    {
+      "baseline": {
+        "status": "PENDING_CUDA"
+      },
+      "candidate": {
+        "status": "PENDING_GEMINI"
+      },
+      "case_id": "case_008",
+      "elapsed_seconds": 0.000501,
+      "metadata_loaded": true,
+      "mode": "dry_run",
+      "trajectory": {
+        "status": "READY"
+      },
+      "verifier": {
+        "status": "PENDING_CUDA"
+      }
+    },
+    {
+      "baseline": {
+        "status": "PENDING_CUDA"
+      },
+      "candidate": {
+        "status": "PENDING_GEMINI"
+      },
+      "case_id": "case_009",
+      "elapsed_seconds": 0.000443,
+      "metadata_loaded": true,
+      "mode": "dry_run",
+      "trajectory": {
+        "status": "READY"
+      },
+      "verifier": {
+        "status": "PENDING_CUDA"
+      }
+    },
+    {
+      "baseline": {
+        "status": "PENDING_CUDA"
+      },
+      "candidate": {
+        "status": "PENDING_GEMINI"
+      },
+      "case_id": "case_010",
+      "elapsed_seconds": 0.000434,
+      "metadata_loaded": true,
+      "mode": "dry_run",
+      "trajectory": {
+        "status": "READY"
+      },
+      "verifier": {
+        "status": "PENDING_CUDA"
+      }
+    }
+  ],
+  "schema_version": "1.0"
+}

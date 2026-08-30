@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "comparison": {
+    "baseline": "reference",
+    "candidate": "gemini_flash_agent"
+  },
+  "per_case": [
+    "case_id",
+    "baseline_correctness",
+    "candidate_correctness",
+    "baseline_runtime",
+    "candidate_runtime",
+    "speedup",
+    "candidate_attempts",
+    "trajectory",
+    "failure_reason"
+  ],
+  "aggregate": [
+    "cases",
+    "baseline_passed",
+    "candidate_passed",
+    "candidate_success_rate",
+    "average_baseline_runtime",
+    "average_candidate_runtime",
+    "average_speedup",
+    "failed_cases"
+  ],
+  "execution": {
+    "cuda_required": true,
+    "gemini_api_required": true,
+    "batch_execution": true,
+    "trajectory_recording": true
+  }
+}

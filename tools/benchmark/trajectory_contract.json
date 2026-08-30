@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "required_fields": [
+    "case_id",
+    "mode",
+    "baseline",
+    "candidate",
+    "verifier",
+    "trajectory"
+  ],
+  "baseline": {
+    "implementation": "reference"
+  },
+  "candidate": {
+    "implementation": "gemini_flash_agent"
+  },
+  "execution": {
+    "cuda_required_for_final_run": true,
+    "gemini_required_for_final_run": true
+  },
+  "secrets": {
+    "api_keys_allowed": false,
+    "credentials_allowed": false
+  }
+}

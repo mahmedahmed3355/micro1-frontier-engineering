@@ -1,0 +1,18 @@
+{
+  "baseline": {
+    "status": "PENDING_CUDA"
+  },
+  "candidate": {
+    "status": "PENDING_GEMINI"
+  },
+  "case_id": "case_009",
+  "elapsed_seconds": 0.000443,
+  "metadata_loaded": true,
+  "mode": "dry_run",
+  "trajectory": {
+    "status": "READY"
+  },
+  "verifier": {
+    "status": "PENDING_CUDA"
+  }
+}
