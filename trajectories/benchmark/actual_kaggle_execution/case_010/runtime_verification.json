@@ -1,0 +1,21 @@
+{
+  "case_id": "case_010",
+  "verification": "runtime",
+  "environment": {
+    "torch_version": "2.10.0+cu128",
+    "cuda_available": true,
+    "cuda_device_count": 2,
+    "distributed_available": true
+  },
+  "candidate": {
+    "generic_cuda_device": true,
+    "config_device": "cuda",
+    "defect_confirmed": true
+  },
+  "reference": {
+    "rank_derived_device": true,
+    "config_device": "cuda:0",
+    "rank_device_confirmed": true
+  },
+  "status": "PASS"
+}
