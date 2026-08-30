@@ -1,0 +1,13 @@
+{
+  "case_id": "case_007",
+  "verification": "real_contract",
+  "return_code": 0,
+  "candidate_bug_confirmed": true,
+  "expected_candidate_behavior": "distributed loss remains rank-local",
+  "expected_reference_behavior": "distributed loss is globally normalized",
+  "stdout": "TORCH_VERSION=2.10.0+cu128\nDISTRIBUTED_AVAILABLE=True\nSINGLE_PROCESS_CANDIDATE STATUS=PASS LOSS=9.30204391\n[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1\n[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1\nDISTRIBUTED_CANDIDATE LOCAL_LOSS=1.00000000 GLOBAL_MEAN=5.00000000 EXPECTED=5.00000000 STATUS=PASS\nDISTRIBUTED_REFERENCE LOCAL_LOSS=5.00000000 GLOBAL_MEAN=5.00000000 EXPECTED=5.00000000 STATUS=PASS\nOVERALL_STATUS=PASS\n",
+  "total": 3,
+  "passed": 3,
+  "failed": 0,
+  "status": "PASS"
+}
