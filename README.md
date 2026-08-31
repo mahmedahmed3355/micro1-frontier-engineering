@@ -133,8 +133,7 @@ CUDA execution was completed in the recorded GPU-capable benchmark environment.
 The local development environment is used for case construction, static
 validation, orchestration development, and benchmark preparation.
 
-GPU execution will be performed in a suitable GPU environment such as Kaggle
-when the execution phase begins.
+GPU/Kaggle execution has already been completed for the canonical benchmark checkpoint, and the recorded execution evidence is preserved under trajectories/benchmark/actual_kaggle_execution/. Any future GPU execution is optional reproduction and is not part of the canonical final result.
 
 Gemini API
 ----------
