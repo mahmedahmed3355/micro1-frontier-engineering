@@ -217,22 +217,4 @@ environment, agent execution, and verifier.
 Final Benchmark
 ---------------
 
-The intended final benchmark flow is:
-
-case registry
-    ->
-reference baseline
-    ->
-Gemini Flash agent
-    ->
-CUDA execution
-    ->
-verifier
-    ->
-trajectory recording
-    ->
-baseline/candidate comparison
-    ->
-aggregate benchmark report
-
-The final report should preserve per-case results as well as aggregate results.
+case registry → Reference Oracle → Simple Baseline → Advanced Gemini Agent → CUDA execution → deterministic verifier → trajectory recording → baseline vs advanced comparison → aggregate benchmark report
